@@ -13,8 +13,8 @@
 	</head>
 
 	<body>
-		<header>
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<header class="container-fluid">
+			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
 					<button
 						class="navbar-toggler"
@@ -47,12 +47,12 @@
 			</nav>
 		</header>
 		<main class="container-fluid">
-			<div class="p-4 content-section d-lg-flex">
-				<div>
-					<!-- <img
+			<div class="row p-5">
+				<!-- <img
 						src="./assets/icons/1.svg"
 						class="flavor-icon"
 						alt="" /> -->
+				<section class="col-8">
 					<h1>The <strong>Forgiveness</strong> Experiment</h1>
 					<p class="tagline m-2 text-center">
 						What if the only thing between you and peace...
@@ -63,13 +63,15 @@
 							Pre-order now
 						</button>
 					</div>
+				</section>
+				<div class="col">
+					<img
+						class="img-fluid float-end"
+						src="/assets/imgs/book-cover-asset_transparent.png"
+						alt="" />
 				</div>
-				<img
-					class="img-fluid"
-					src="/assets/imgs/book-cover-asset_transparent.png"
-					alt="" />
 			</div>
-			<section class="content-section-dark p-5">
+			<section class="highlight-bg row p-5">
 				<h2 class="upperbold">About the book</h2>
 				<p>
 					<strong><em>The Forgiveness Experiment</em></strong> is not
@@ -96,7 +98,7 @@
 				</p>
 				<p class="upperbold">This book is for you.</p>
 			</section>
-			<section class="content-section p-5">
+			<section class="content-section row p-5">
 				<h2 class="upperbold">Advance Praise</h2>
 				<div class="d-lg-flex">
 					<div class="quote-block mt-4 mb-4">
@@ -185,7 +187,36 @@
 					</div>
 				</div>
 			</section>
+			<section class="highlight-bg row p-5">
+				<h2>About the author</h2>
+				<div class="row">
+					<div class="col-8">
+						<p>
+							Rabbi Yisorel Bernath, is a Chabad rabbi,
+							relationship coach, matchmaker, and storyteller
+							whose work sits at the intersection of soul,
+							psychology, and Jewish wisdom. Known affectionately
+							as "The Love Rabbi," for over two decades he has
+							helped hundreds of individuals and couples navigate
+							the complexities of the human heart, from heartbreak
+							to healing, from resentment to forgiveness.
+						</p>
+						<p>
+							Rabbi Bernath lives in Montreal with his wife Sara
+							and their six children. This book is not just his
+							teaching, it's his personal journey.
+						</p>
+					</div>
+					<div class="col-4">
+						<img
+							src="./assets/imgs/rabbi-yisroel-bernath-headshot.jpg"
+							class="img-fluid rounded"
+							alt="" />
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="container-fluid"></footer>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
