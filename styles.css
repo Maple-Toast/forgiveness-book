@@ -70,8 +70,13 @@ h1 {
 }
 
 h2 {
+	--fs: var(--h2-mobile-size);
 	font-family: var(--main-font-regular);
 	font-size: var(--h2-mobile-size);
+
+	@media screen and (min-width: 780px) {
+		--fs: var(--h2-desktop-size);
+	}
 }
 
 p {
@@ -105,6 +110,8 @@ nav {
 	background-color: var(--main-color-darker-light);
 }
 
+/* images */
+
 .quote-img img {
 	height: 260px;
 	width: 260px;
@@ -112,4 +119,11 @@ nav {
 	display: block;
 	border: 2px solid var(--accent-color-dark);
 	margin: 1rem auto;
+}
+
+.square-portrait {
+	--size: 260px;
+	height: var(--size);
+	width: var(--size);
+	object-fit: cover;
 }
