@@ -73,7 +73,8 @@ h2 {
 	--fs: var(--h2-mobile-size);
 	font-family: var(--main-font-regular);
 	font-size: var(--h2-mobile-size);
-
+	text-transform: uppercase;
+	font-weight: bold;
 	@media screen and (min-width: 780px) {
 		--fs: var(--h2-desktop-size);
 	}
