@@ -111,6 +111,10 @@ nav {
 	background-color: var(--main-color-darker-light);
 }
 
+.cover-img {
+	max-width: 425px;
+}
+
 /* images */
 
 .quote-img img {
