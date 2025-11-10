@@ -151,9 +151,11 @@ footer {
 	color: var(--accent-color-dark);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
-	border-radius: 10px;
+	border-radius: 50px;
 	outline: 2px solid var(--accent-color-dark);
 	transition: background-color 0.2s;
+	max-width: 325px;
+	margin-bottom: 2rem;
 
 	&:hover, &:focus {
 		background-color: var(--accent-color-dark);
@@ -168,7 +170,7 @@ footer {
 		border-radius: 50%;
 		background-color: var(--accent-color-dark);
 	}
-	/* max-width: 544px; */
+	max-width: 544px;
 }
 
 @media (min-width: 992px) {
@@ -180,11 +182,11 @@ footer {
 		}
 	}
 
-	footer {
+	/* footer {
 		.content-section {
 			border-bottom: 1px solid var(--accent-color-dark);
 		}
-	}
+	} */
 
 	.desktop-only {
 		display: block;
@@ -192,5 +194,9 @@ footer {
 
 	.mobile-only {
 		display: none;
+	}
+
+	.social-links {
+		width: 500px;
 	}
 }
