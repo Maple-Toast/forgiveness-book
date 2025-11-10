@@ -63,6 +63,8 @@ body {
 
 .container-fluid h1 {
     --fs: var(--h1-mobile-size);
+    --icon-size: 80px;
+    --url: url("assets/icons/svg/1.svg");
     font-family: var(--main-font-regular);
     font-size: var(--fs);
     text-transform: uppercase;
@@ -86,6 +88,18 @@ h2 {
 p {
     font-family: var(--main-font-regular);
     font-size: 1em;
+}
+
+.before-icon {
+    &::before {
+        content: "";
+        background-image: var(--url);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: var(--icon-size, 40px);
+        height: var(--icon-size, 40px);
+        margin-right: 10px;
+    }
 }
 
 .text-left {
