@@ -62,7 +62,6 @@ h1 {
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
 	text-transform: uppercase;
-	text-align: center;
 
 	@media screen and (min-width: 780px) {
 		--fs: var(--h1-desktop-size);
@@ -103,6 +102,17 @@ p {
 
 .desktop-only {
 	display: none;
+}
+
+/* preorder btn */
+
+.preorder-btn {
+	background-color: var(--accent-color-light);
+	border-radius: 20px;
+	color: var(--pure-black);
+	border: none;
+	font-size: 19px;
+	padding: 0.375rem 1rem;
 }
 
 /* background */
