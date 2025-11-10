@@ -118,6 +118,11 @@ p {
 		background-color: var(--main-color-dark);
 		color: var(--accent-color-light);
 	}
+
+	&:disabled {
+		background-color: var(--accent-color-light);
+		color: rgb(148, 143, 143);
+	}
 }
 
 .preorder-form {
