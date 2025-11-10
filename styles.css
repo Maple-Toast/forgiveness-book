@@ -120,6 +120,10 @@ p {
 	}
 }
 
+.preorder-form {
+	animation: fadeIn 0.2s 1 forwards ease-in-out;
+}
+
 /* background */
 
 nav {
@@ -213,5 +217,15 @@ footer {
 
 	.social-links {
 		width: 500px;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
 	}
 }
