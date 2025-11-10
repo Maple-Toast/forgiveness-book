@@ -107,6 +107,10 @@ nav {
 	background-color: var(--main-color-light);
 }
 
+.navbar-nav a:hover, .navbar-nav a:focus {
+		color: var(--accent-color-dark)
+}
+
 .highlight-bg {
 	background-color: var(--main-color-darker-light);
 }
@@ -131,4 +135,14 @@ nav {
 	height: var(--size);
 	width: var(--size);
 	object-fit: cover;
+}
+
+@media (min-width: 992px) {
+	.navbar-nav {
+		margin: 1rem 2rem;
+
+		a {
+			margin-right: 2rem;
+		}
+	}
 }
