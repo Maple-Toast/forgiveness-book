@@ -2,7 +2,7 @@ const preorderBtn = document.getElementById('preorderBtn')
 const formHolder = document.getElementById('formHolder')
 
 const preorderForm = `
-<form class="mt-3 preorder-form" id="preOrderForm">
+<form class="mt-3 ms-2 preorder-form" id="preOrderForm">
   <div class="mb-3">
   <div class="mb-3">
     <label for="nameInput" class="form-label">First Name/Last Name</label>
