@@ -109,10 +109,15 @@ p {
 .preorder-btn {
 	background-color: var(--accent-color-light);
 	border-radius: 20px;
-	color: var(--pure-black);
+	color: var(--main-color-dark);
 	border: none;
 	font-size: 19px;
 	padding: 0.375rem 1rem;
+
+	&:hover {
+		background-color: var(--main-color-dark);
+		color: var(--accent-color-light);
+	}
 }
 
 /* background */
