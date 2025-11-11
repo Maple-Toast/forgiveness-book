@@ -1,189 +1,279 @@
 :root {
-    --main-color-light: #f8f5f2;
-    --main-color-darker-light: #f3efe9;
-    --main-color-dark: #281306;
-    --accent-color-light: #dbd3cd;
-    --accent-color-dark: #b89d8c;
-    --pure-black: #000;
-    --pure-white: #fff;
-    --main-font-regular: "Helvetica World";
-    --main-font-bold: "Helvetica World Bold";
-    --main-font-italic: "Helvetica World Italic";
-    --main-font-bold-italic: "Helvetica World Bold Italic";
-    --h1-mobile-size: 3rem;
-    --h1-desktop-size: 6rem;
-    --h2-mobile-size: 2rem;
-    --h2-desktop-size: 4rem;
+	--main-color-light: #f8f5f2;
+	--main-color-darker-light: #f3efe9;
+	--main-color-dark: #281306;
+	--accent-color-light: #dbd3cd;
+	--accent-color-dark: #b89d8c;
+	--pure-black: #000;
+	--pure-white: #fff;
+	--main-font-regular: 'Helvetica World';
+	--main-font-bold: 'Helvetica World Bold';
+	--main-font-italic: 'Helvetica World Italic';
+	--main-font-bold-italic: 'Helvetica World Bold Italic';
+	--h1-mobile-size: 3rem;
+	--h1-desktop-size: 6rem;
+	--h2-mobile-size: 2rem;
+	--h2-desktop-size: 4rem;
 }
 
 @font-face {
-    font-family: "Helvetica World";
-    src:
-        url("/fonts/helvetica-world-regular.woff2") format("woff2"),
-        url("/fonts/helvetica-world-regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Helvetica World';
+	src: url('/fonts/helvetica-world-regular.woff2') format('woff2'),
+		url('/fonts/helvetica-world-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Helvetica World Bold";
-    src:
-        url("/fonts/helvetica-world-bold.woff2") format("woff2"),
-        url("/fonts/helvetica-world-bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
+	font-family: 'Helvetica World Bold';
+	src: url('/fonts/helvetica-world-bold.woff2') format('woff2'),
+		url('/fonts/helvetica-world-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: "Helvetica World Italic";
-    src:
-        url("/fonts/helvetica-world-italic.woff2") format("woff2"),
-        url("/fonts/helvetica-world-italic.woff2") format("woff");
-    font-weight: normal;
-    font-style: italic;
+	font-family: 'Helvetica World Italic';
+	src: url('/fonts/helvetica-world-italic.woff2') format('woff2'),
+		url('/fonts/helvetica-world-italic.woff2') format('woff');
+	font-weight: normal;
+	font-style: italic;
 }
 
 @font-face {
-    font-family: "Helvetica World Bold Italic";
-    src:
-        url("/fonts/helvetica-world-bold-italic.woff2") format("woff2"),
-        url("/fonts/helvetica-world-bold-italic.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
+	font-family: 'Helvetica World Bold Italic';
+	src: url('/fonts/helvetica-world-bold-italic.woff2') format('woff2'),
+		url('/fonts/helvetica-world-bold-italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
 }
 
 /* base  */
 
 body {
-    font-size: 18px;
-    background-color: var(--main-color-light);
+	font-size: 18px;
+	background-color: var(--main-color-light);
 }
 
 /* text  */
 
 .container-fluid h1 {
-    --fs: var(--h1-mobile-size);
-    --icon-size: 80px;
-    --url: url("assets/icons/svg/1.svg");
-    font-family: var(--main-font-regular);
-    font-size: var(--fs);
-    text-transform: uppercase;
-    font-weight: 100;
-    @media screen and (min-width: 780px) {
-        --fs: var(--h1-desktop-size);
-    }
+	--fs: var(--h1-mobile-size);
+	--icon-size: 80px;
+	--url: url('assets/icons/svg/1.svg');
+	font-family: var(--main-font-regular);
+	font-size: var(--fs);
+	text-transform: uppercase;
+	font-weight: 100;
+	@media screen and (min-width: 780px) {
+		--fs: var(--h1-desktop-size);
+	}
 }
 
 h2 {
-    --fs: var(--h2-mobile-size);
-    font-family: var(--main-font-regular);
-    font-size: var(--h2-mobile-size);
-    text-transform: uppercase;
-    font-weight: bold;
-    @media screen and (min-width: 780px) {
-        --fs: var(--h2-desktop-size);
-    }
+	--fs: var(--h2-mobile-size);
+	font-family: var(--main-font-regular);
+	font-size: var(--h2-mobile-size);
+	text-transform: uppercase;
+	font-weight: bold;
+	@media screen and (min-width: 780px) {
+		--fs: var(--h2-desktop-size);
+	}
 }
 
 p {
-    font-family: var(--main-font-regular);
-    font-size: 1em;
+	font-family: var(--main-font-regular);
+	font-size: 1em;
 }
 
 .before-icon {
-    &::before {
-        content: "";
-        background-image: var(--url);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: var(--icon-size, 40px);
-        height: var(--icon-size, 40px);
-        margin-right: 10px;
-    }
+	&::before {
+		content: '';
+		background-image: var(--url);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: var(--icon-size, 40px);
+		height: var(--icon-size, 40px);
+		margin-right: 10px;
+	}
 }
 
 .text-left {
-    text-align: left;
+	text-align: left;
 }
 
 .text-right {
-    text-align: right;
+	text-align: right;
 }
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .text-justify {
-    text-align: justify;
+	text-align: justify;
 }
 
 .text-bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 .text-bolder {
-    font-weight: bolder;
+	font-weight: bolder;
 }
 
 /* modifiers */
 
 .container-fluid {
-    padding: 0rem;
+	padding: 0rem;
 }
 
 .upperbold {
-    text-transform: uppercase;
-    font-weight: bold;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .flavor-icon {
-    max-width: 400px;
-    max-height: 400px;
+	max-width: 400px;
+	max-height: 400px;
+}
+
+.desktop-only {
+	display: none;
+}
+
+/* preorder btn */
+
+.preorder-btn {
+	background-color: var(--accent-color-light);
+	border-radius: 20px;
+	color: var(--main-color-dark);
+	border: none;
+	font-size: 19px;
+	padding: 0.375rem 1rem;
+
+	&:hover {
+		background-color: var(--main-color-dark);
+		color: var(--accent-color-light);
+	}
+
+	&:disabled {
+		background-color: var(--accent-color-light);
+		color: rgb(148, 143, 143);
+	}
+}
+
+.preorder-form {
+	animation: fadeIn 0.2s 1 forwards ease-in-out;
 }
 
 /* background */
 
 nav {
-    background-color: var(--main-color-light);
+	background-color: var(--main-color-light);
 }
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-    color: var(--accent-color-dark);
+	color: var(--accent-color-dark);
 }
 
 .highlight-bg {
-    background-color: var(--main-color-darker-light);
+	background-color: var(--main-color-darker-light);
 }
 
 .cover-img {
-    max-width: 500px;
+	max-width: 500px;
 }
 
 /* images */
 
 .quote-img img {
-    height: 260px;
-    width: 260px;
-    object-fit: cover;
-    display: block;
-    border: 2px solid var(--accent-color-dark);
-    margin: 1rem auto;
+	height: 260px;
+	width: 260px;
+	object-fit: cover;
+	display: block;
+	border: 2px solid var(--accent-color-dark);
+	margin: 1rem auto;
 }
 
 .square-portrait {
-    --size: 260px;
-    height: var(--size);
-    width: var(--size);
-    object-fit: cover;
+	--size: 260px;
+	height: var(--size);
+	width: var(--size);
+	object-fit: cover;
+}
+
+/* footer */
+
+footer {
+	color: var(--accent-color-dark);
+}
+
+.footer-learn-more {
+	color: var(--accent-color-dark);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 50px;
+	outline: 2px solid var(--accent-color-dark);
+	transition: background-color 0.2s;
+	max-width: 325px;
+	margin-bottom: 2rem;
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color-dark);
+		color: var(--main-color-light);
+	}
+}
+
+.social-links {
+	a img {
+		max-width: 50px;
+		padding: 5px;
+		border-radius: 50%;
+		background-color: var(--accent-color-dark);
+	}
+	max-width: 544px;
 }
 
 @media (min-width: 992px) {
-    .navbar-nav {
-        margin: 1rem 2rem;
+	.navbar-nav {
+		margin: 1rem 2rem;
 
-        a {
-            margin-right: 2rem;
-        }
-    }
+		a {
+			margin-right: 2rem;
+		}
+	}
+
+	a {
+		margin-right: 2rem;
+	}
+
+	/* footer {
+		.content-section {
+			border-bottom: 1px solid var(--accent-color-dark);
+            }
+            } */
+
+	.desktop-only {
+		display: block;
+	}
+
+	.mobile-only {
+		display: none;
+	}
+
+	.social-links {
+		width: 500px;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
+	}
 }
