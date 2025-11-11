@@ -152,7 +152,7 @@ hr.strong{
      opacity: 1;
 }
 
-.row > div, .row > section, .row:has(section+div) {
+.row > div, .row > section, .row:has(section+div), .cont {
   max-width: 1400px;
   
   @media screen and (min-width: 1400px) {
@@ -198,7 +198,24 @@ nav {
 
 .highlight-bg {
 	background-color: var(--main-color-darker-light);
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        div, img{
+            margin: auto;
+        }
+
+        img{
+            flex-basis: 1;
+        }
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
 }
+
 
 .cover-img {
 	width: 410px;
@@ -223,6 +240,11 @@ nav {
 	height: var(--size);
 	width: var(--size);
 	object-fit: cover;
+}
+
+.square-portrait.img-fluid{
+    max-width: none;
+    height: var(--size, 260px);
 }
 
 main>div{
