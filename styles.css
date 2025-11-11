@@ -141,6 +141,11 @@ p {
 	display: none;
 }
 
+hr.strong{
+     border: 1px solid var(--accent-color-dark);
+     opacity: 1;
+}
+
 /* preorder btn */
 
 .preorder-btn {
@@ -212,12 +217,12 @@ footer {
 .btn.btn-outline {
 	color: var(--accent-color-dark);
 	text-decoration: none;
-	padding: 0.5rem 1rem;
+	/* padding: 0.5rem 1rem; */
 	border-radius: 50px;
 	outline: 2px solid var(--accent-color-dark);
 	transition: background-color 0.2s;
 	max-width: 325px;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
     display: inline-flex;
     justify-content: space-around;
     flex-flow: column wrap;
