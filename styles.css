@@ -177,6 +177,12 @@ p {
 		height: var(--icon-size, 40px);
 		margin-right: 10px;
 	}
+
+	&:hover {
+		&::before {
+			animation: spin 0.7s 1 forwards ease-in-out;
+		}
+	}
 }
 
 .top-and-right-icon {
@@ -198,6 +204,13 @@ p {
 			top: 0;
 		}
 	}
+
+	&:hover {
+		&::before {
+			animation: spin 0.7s 1 forwards ease-in-out;
+		}
+	}
+	
 }
 
 /* modifiers */
@@ -349,5 +362,15 @@ footer {
 
 	100% {
 		opacity: 100%;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
