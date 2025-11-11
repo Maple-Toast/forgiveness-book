@@ -156,8 +156,10 @@ hr.strong{
   max-width: 1400px;
   
   @media screen and (min-width: 1400px) {
-    margin-inline: auto;
-  }
+        &:not(.upperbold){
+            margin-inline: auto;
+        }
+    }
 }
 
 /* preorder btn */
@@ -198,12 +200,13 @@ nav {
 
 .highlight-bg {
 	background-color: var(--main-color-darker-light);
+}
 
-    .cont{
+.cont{
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        div, img{
+        div:not(:has(.upperbold, .social-links)), img{
             margin: auto;
         }
 
@@ -214,7 +217,6 @@ nav {
             flex-direction: row;
         }
     }
-}
 
 
 .cover-img {
