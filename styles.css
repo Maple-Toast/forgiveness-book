@@ -122,12 +122,14 @@ body {
 
 /* text  */
 
-h1 {
+.container-fluid h1 {
 	--fs: var(--h1-mobile-size);
+	--icon-size: 80px;
+	--url: url('assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
 	text-transform: uppercase;
-
+	font-weight: 100;
 	@media screen and (min-width: 780px) {
 		--fs: var(--h1-desktop-size);
 	}
@@ -147,6 +149,19 @@ h2 {
 p {
 	font-family: var(--main-font-regular);
 	font-size: 1em;
+}
+
+.before-icon {
+	&::before {
+		content: '';
+		display: block;
+		background-image: var(--url);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: var(--icon-size, 40px);
+		height: var(--icon-size, 40px);
+		margin-right: 10px;
+	}
 }
 
 /* modifiers */
