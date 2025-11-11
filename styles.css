@@ -63,6 +63,7 @@ body {
 	--url: url('assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
+	/* font-size: clamp(var(--h1-mobile-size), calc(20px + (36–20) * (100vw - 768px)/(1920–768)), var(--h1-desktop-size	)); */
 	text-transform: uppercase;
 	font-weight: 100;
 	@media screen and (min-width: 780px) {
@@ -187,7 +188,10 @@ nav {
 }
 
 .cover-img {
-	max-width: 500px;
+	width: 410px;
+	@media screen and (min-width: 1440px) {
+		width: 500px;
+	}
 }
 
 /* images */
