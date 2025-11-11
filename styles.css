@@ -209,7 +209,7 @@ footer {
 	color: var(--accent-color-dark);
 }
 
-.footer-learn-more {
+.btn.btn-outline {
 	color: var(--accent-color-dark);
 	text-decoration: none;
 	padding: 0.5rem 1rem;
@@ -218,6 +218,12 @@ footer {
 	transition: background-color 0.2s;
 	max-width: 325px;
 	margin-bottom: 2rem;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    @media screen and (min-width: 780px) {
+        flex-direction: row;
+    }
 
 	&:hover,
 	&:focus {
