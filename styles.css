@@ -166,17 +166,9 @@ p {
 	--url: url('assets/icons/svg/2.svg');
 }
 
-/* .icon-3{
+.icon-3{
 	--url: url('assets/icons/svg/3.svg');
-
-	&::before{
-
-		@media screen and (min-width: 768px){
-			top: 60px;
-			
-		}
-	}
-} */
+}
 
 .icon-right{
 	--icon-position: calc(var(--icon-size)/var(--amount, -1));
