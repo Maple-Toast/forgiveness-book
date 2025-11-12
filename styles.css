@@ -374,6 +374,10 @@ main>div{
 
 footer {
 	color: var(--accent-color-dark);
+
+	& h2 {
+		font-size: 2em;
+	}
 }
 
 .btn.btn-outline {
