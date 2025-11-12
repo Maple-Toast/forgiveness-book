@@ -177,7 +177,10 @@ p {
 	&::before{
 		position: absolute;
 		top: var(--icon-position);
+
 	}
+	
+	
 
 	@media screen and (min-width: 768px){
 		--amount: -20;
@@ -199,6 +202,10 @@ p {
 		height: var(--icon-size, 40px);
 		margin-right: 10px;
 		display: inline-block;
+	}
+
+	&:hover::before {
+				animation: spin 0.7s 1 forwards ease-in-out;
 	}
 }
 
@@ -436,5 +443,15 @@ footer {
 
 	100% {
 		opacity: 100%;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
