@@ -10,10 +10,10 @@
 	--main-font-bold: 'Inter Bold';
 	--main-font-italic: 'Inter Italic';
 	--main-font-bold-italic: 'Inter Italic Bold';
-	--h1-mobile-size: 3rem;
-	--h1-desktop-size: 6rem;
-	--h2-mobile-size: 2rem;
-	--h2-desktop-size: 4rem;
+	--h1-mobile-size: 3em;
+	--h1-desktop-size: 6em;
+	--h2-mobile-size: 2em;
+	--h2-desktop-size: 4em;
 }
 
 /* inter-regular - latin */
@@ -133,7 +133,7 @@ body {
 	--url: url('assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
-	/* font-size: clamp(var(--h1-mobile-size), calc(var(--h1-mobile-size) + (var(--h1-mobile-size)–var(--h1-desktop-size))), var(--h1-desktop-size)); */
+
 	text-transform: uppercase;
 	font-weight: 100;
 	@media screen and (min-width: 768px) {
@@ -144,11 +144,12 @@ body {
 h2 {
 	--fs: var(--h2-mobile-size);
 	font-family: var(--main-font-regular);
-	font-size: var(--h2-mobile-size);
+	font-size: var(--fs);
 	text-transform: uppercase;
 	font-weight: bold;
 	@media screen and (min-width: 768px) {
 		--fs: var(--h2-desktop-size);
+
 	}
 }
 
@@ -157,7 +158,30 @@ p {
 	font-size: 1em;
 }
 
+.icon-1{
+	--url: url('assets/icons/svg/1.svg');
+}
+
+.icon-right{
+	--icon-position: calc(var(--icon-size)/var(--amount, -1));
+	position: relative;
+	margin-top: calc(var(--icon-position)*-0.60);
+	&::before{
+		position: absolute;
+		top: var(--icon-position);
+	}
+
+	@media screen and (min-width: 768px){
+		--amount: -20;
+		&::before{
+			right: 0;
+			top: var(--icon-position);
+		}
+	}
+}
+
 .before-icon {
+	--icon-size: 80px;
 	&::before {
 		content: '';
 		background-image: var(--url);
@@ -166,6 +190,7 @@ p {
 		width: var(--icon-size, 40px);
 		height: var(--icon-size, 40px);
 		margin-right: 10px;
+		display: inline-block;
 	}
 }
 
