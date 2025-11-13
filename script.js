@@ -59,6 +59,8 @@ const register = (e) => {
     preorderBtn.disabled = true
     formSubmitBtn.disabled = true
      formHolder.innerHTML = `<div class="mt-3 bg-success rounded p-1 ps-2 text-white"><h5>Thank you for joining the waitlist! We'll be in touch soon.</h5></div>`
+
+    localStorage.setItem('preordered', true)
     db.collection("preorders").add({
       email: email,
       name: name
@@ -80,3 +82,9 @@ const register = (e) => {
 
 }
 
+window.onload = () => {
+  const preordered = localStorage.getItem('preordered')
+  if (preordered) {
+    preorderBtn.disabled = true
+  }
+}
