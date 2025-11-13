@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
+
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Order The Forgiveness Experiment — a powerful book about healing, self-growth, and the freedom that comes from true forgiveness by Rabbi Yisroel Bernath. ">
@@ -25,53 +26,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles.css" />
-    </head>
+</head>
 
-    <body>
-        <header class="container-fluid">
-            <div class="row align-items-start">
-                <nav class="navbar navbar-expand-lg cont px-5">
-                    <button
-                        class="navbar-toggler ms-auto"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
+<body>
+    <header class="container-fluid">
+        <div class="row align-items-start">
+            <nav class="navbar navbar-expand-lg cont px-5">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex text-center">
+                        <a class="nav-link upperbold" href="#about_book">About the book</a>
+                        <a class="nav-link upperbold" href="#advance_praise">Advance Praise</a>
+                        <a class="nav-link upperbold" href="#about_author">About the Author</a>
+                        <a class="nav-link upperbold" href="#">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row px-md-5 pb-lg-5 align-items-center">
+            <section class="col col-12 col-xl-7 flex-grow-lg-1 clean">
+                <h1 class="d-flex flex-column before-icon">
+                    The <span class="text-bold">Forgiveness</span>
+                    Experiment
+                </h1>
+                <p class="tagline m-2 text-left">
+                    What if the only thing between you and peace...
+                    <strong>was letting go</strong>?
+                </p>
+                <div class="d-flex my-3 justify-content-start">
+                    <button id="preorderBtn" class="preorder-btn btn btn-primary upperbold" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Pre-order now
                     </button>
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navbarNavAltMarkup"
-                    >
-                        <div class="navbar-nav d-flex text-center">
-                            <a class="nav-link upperbold" href="#about_book">About the book</a>
-                            <a class="nav-link upperbold" href="#advance_praise">Advance Praise</a>
-                            <a class="nav-link upperbold" href="#about_author">About the Author</a>
-                            <a class="nav-link upperbold" href="#">Contact</a>
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Pre-order Form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="mt-3 ms-2 preorder-form" id="preOrderForm">
+                                        <div class="mb-3">
+                                            <div class="mb-3">
+                                                <label for="nameInput" class="form-label">First Name/Last Name</label>
+                                                <input type="text" class="form-control" id="nameInput"
+                                                    placeholder="John Doe" required>
+                                            </div>
+                                            <label for="formEmail" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="emailInput"
+                                                aria-describedby="emailHelp" placeholder="example@example.com" required>
+                                            <div id="emailHelp" class="form-text mt-3 mb-2"><strong>Data Disclosure</strong>:
+                                                By joining the waitlist, you consent to Yisroel Bernath, Chabad NDG, and
+                                                its affiliates collecting and storing your name and email for the
+                                                purpose of contacting you about this book and related updates or events.
+                                                Your information is transmitted securely via SSL and will not be shared
+                                                with third parties. All data is the property of Yisroel Bernath, Chabad
+                                                NDG, and its affiliates, and will be used solely for their
+                                                communications.</div>
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="consentCheck" required>
+                                            <label class="form-check-label" for="consentCheck"><strong>I consent to the
+                                                    Data Disclosure</strong></label>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-xl-start" ><button
+                                                type="submit" class="btn preorder-btn upperbold" id="formSubmit">Submit</button></div>
+                                        <div id="formHolder"></div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-        <main class="container-fluid">
-            <div class="row px-md-5 pb-lg-5 align-items-center">
-                <section class="col col-12 col-xl-7 flex-grow-lg-1 clean">
-                    <h1 class="d-flex flex-column before-icon">
-                        The <span class="text-bold">Forgiveness</span>
-                        Experiment
-                    </h1>
-                    <p class="tagline m-2 text-left">
-                        What if the only thing between you and peace...
-                        <strong>was letting go</strong>?
-                    </p>
-                    <div class="d-flex my-3 justify-content-start">
-                        <button id="preorderBtn" class="preorder-btn btn btn-primary upperbold">
-                            Pre-order now
-                        </button>
-                        <!-- The following html is the drop-down style button with links to retailers.
+                    <!-- The following html is the drop-down style button with links to retailers.
                      Reminder: Uncomment the code below to enable it. 
                     TO DO: Add hrefs to retailers when available.
                     Add/Remove as many as you want (each one is an <li> element with an <a> inside it).
@@ -86,58 +123,49 @@
                             <li><a class="dropdown-item upperbold" href="#" target="_blank">Other Sites</a></li>
                             <li><a class="dropdown-item upperbold" href="#" target="_blank">More options</a></li>
                         </ul>-->
-                    </div>
-                    <div id="formHolder"></div>
-                </section>
-                <div class="col col-12 col-xl-4 d-flex justify-content-sm-center justify-content-xl-end">
-                    <img
-                        class="img-fluid cover-img"
-                        src="/assets/imgs/book-cover-asset_transparent.png"
-                        alt=""
-                    />
                 </div>
-            </div>
-            <section class="highlight-bg" id="about_book">
-                <div class="cont p-5 column-important">
-                    <h2 class="before-icon icon-1 icon-right">About the book</h2>
-                    <p>
-                        <strong><em>The Forgiveness Experiment</em></strong> is
-                        not about forgetting, nor about excusing what should
-                        never have happened. It is about freedom — the gentle,
-                        courageous work of releasing what no longer serves you.
-                    </p>
-                    <p>
-                        <strong>Rabbi Yisroel Bernath</strong> walks with you
-                        through the valleys of anger, shame, and grief, offering
-                        ancient Jewish wisdom, modern healing tools, and stories
-                        that remind you that you are never alone.
-                    </p>
-                    <p class="upperbold">
-                        For every soul that has been hurt, and every heart that
-                        still aches.
-                    </p>
-                    <p class="upperbold">
-                        For those who lie awake at night, replaying words they
-                        wish had never been spoken.
-                    </p>
-                    <p class="upperbold">
-                        For those who wonder if they will ever feel whole again.
-                    </p>
-                    <p class="upperbold">This book is for you.</p>
-                </div>
-                <div id="formHolder"></div>
             </section>
-            <section class="content-section row p-5" id="advance_praise">
-                <div class="px-md-5">
+            <div class="col col-12 col-xl-4 d-flex justify-content-sm-center justify-content-xl-end">
+                <img class="img-fluid cover-img" src="/assets/imgs/book-cover-asset_transparent.png" alt="" />
+            </div>
+        </div>
+        <section class="highlight-bg" id="about_book">
+            <div class="cont p-5 column-important">
+                <h2 class="before-icon icon-1 icon-right">About the book</h2>
+                <p>
+                    <strong><em>The Forgiveness Experiment</em></strong> is
+                    not about forgetting, nor about excusing what should
+                    never have happened. It is about freedom — the gentle,
+                    courageous work of releasing what no longer serves you.
+                </p>
+                <p>
+                    <strong>Rabbi Yisroel Bernath</strong> walks with you
+                    through the valleys of anger, shame, and grief, offering
+                    ancient Jewish wisdom, modern healing tools, and stories
+                    that remind you that you are never alone.
+                </p>
+                <p class="upperbold">
+                    For every soul that has been hurt, and every heart that
+                    still aches.
+                </p>
+                <p class="upperbold">
+                    For those who lie awake at night, replaying words they
+                    wish had never been spoken.
+                </p>
+                <p class="upperbold">
+                    For those who wonder if they will ever feel whole again.
+                </p>
+                <p class="upperbold">This book is for you.</p>
+            </div>
+            <div id="formHolder"></div>
+        </section>
+        <section class="content-section row p-5" id="advance_praise">
+            <div class="px-md-5">
                 <h2 class="before-icon icon-2 icon-right">Advance Praise</h2>
                 <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between">
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
-                            <img
-                                src="/assets/imgs/RMMF2.png"
-                                alt=""
-                                class="img-fluid"
-                            />
+                            <img src="/assets/imgs/RMMF2.png" alt="" class="img-fluid" />
                         </div>
                         <div class="quote-text mt-4 mb-4">
                             <blockquote>
@@ -150,22 +178,15 @@
                                 </p>
                             </blockquote>
                             <p>
-                                <em><strong>—Rabbi Manis Friedman</strong></em
-                                >,
-                                <cite
-                                    >World-Renowned Speaker, Author, and
-                                    Philosopher</cite
-                                >
+                                <em><strong>—Rabbi Manis Friedman</strong></em>,
+                                <cite>World-Renowned Speaker, Author, and
+                                    Philosopher</cite>
                             </p>
                         </div>
                     </div>
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
-                            <img
-                                src="/assets/imgs/aleeza-ben-shalom.jpeg"
-                                alt=""
-                                class="img-fluid"
-                            />
+                            <img src="/assets/imgs/aleeza-ben-shalom.jpeg" alt="" class="img-fluid" />
                         </div>
                         <div class="quote-text mt-4 mb-4">
                             <blockquote>
@@ -181,22 +202,15 @@
                                 </p>
                             </blockquote>
                             <p>
-                                <em><strong>—Aleeza Ben Shalom</strong></em
-                                >,
-                                <cite
-                                    >Global Dating Coach & Star of Netflix’s
-                                    Jewish Matchmaking</cite
-                                >
+                                <em><strong>—Aleeza Ben Shalom</strong></em>,
+                                <cite>Global Dating Coach & Star of Netflix’s
+                                    Jewish Matchmaking</cite>
                             </p>
                         </div>
                     </div>
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
-                            <img
-                                src="/assets/imgs/assael-romanelli.jpeg"
-                                alt=""
-                                class="img-fluid"
-                            />
+                            <img src="/assets/imgs/assael-romanelli.jpeg" alt="" class="img-fluid" />
                         </div>
                         <div class="quote-text mt-4 mb-4">
                             <blockquote>
@@ -209,85 +223,92 @@
                                 </p>
                             </blockquote>
                             <p>
-                                <em><strong>—Dr. Assael Romanelli</strong></em
-                                >,
-                                <cite
-                                    >Ph.D, LCSW, MFT, Author of Feel Free
-                                    Together</cite
-                                >
+                                <em><strong>—Dr. Assael Romanelli</strong></em>,
+                                <cite>Ph.D, LCSW, MFT, Author of Feel Free
+                                    Together</cite>
                             </p>
                         </div>
                     </div>
                 </div>
-                </div>
-
-            </section>
-            <section class="highlight-bg pb-lg-5" id="about_author">
-                    <div class="row px-5">
-                        <div class="px-md-5 pt-5 pb-md-4">
-                            <h2 class="before-icon icon-3 icon-right">About the author</h2>
-                        </div>
-                    </div>
-                <div class="cont px-5 pe-5">                    
-                    <div>
-                        <p>
-                            Rabbi Yisorel Bernath, is a Chabad rabbi, relationship
-                            coach, matchmaker, and storyteller whose work sits at
-                            the intersection of soul, psychology, and Jewish wisdom.
-                            Known affectionately as "The Love Rabbi," for over two
-                            decades he has helped hundreds of individuals and
-                            couples navigate the complexities of the human heart,
-                            from heartbreak to healing, from resentment to
-                            forgiveness.
-                        </p>
-                        <p>
-                            Rabbi Bernath lives in Montreal with his wife Sara and
-                            their six children. This book is not just his teaching,
-                            it's his personal journey.
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="./assets/imgs/rabbi-yisroel-bernath-headshot.jpg"
-                            class="img-fluid rounded square-portrait"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </section>
-        </main>
-          <footer id="footer" class="container-fluid content-section">
-            <div class="cont p-5 mt-3">
-                <div class="me-auto d-flex align-items-center">
-                    <h2 class="upperbold flex-fill">Follow Rabbi Bernath!</h2>
-                </div>
-                <div class="ms-auto">
-                    <div class="social-links d-flex flex-row  flex-wrap gap-sm-2 gap-lg-3 justify-content-sm-start justify-content-md-center">
-                        <a target="_blank" href="https://www.facebook.com/TheLoveRabbi/" class="p-sm-2" aria-label=""><img src="/assets/icons/social/facebook.png" alt=""></a>
-                        <a target="_blank" href="https://www.instagram.com/montrealrabbi/" class="p-1" aria-label=""><img src="/assets/icons/social/Instagram.png" alt=""></a>
-                        <a target="_blank" href="https://www.threads.net/@montrealrabbi" class="p-1" aria-label=""><img src="/assets/icons/social/threads-img-1.png" alt=""></a>
-                        <a target="_blank" href="https://x.com/montrealrabbi" class="p-1" aria-label=""><img src="/assets/icons/social/X.png" alt=""></a>
-                        <a target="_blank" href="https://www.youtube.com/channel/UCi5mua4-gkhiv7NdbJv_C7w" class="p-1" aria-label=""><img src="/assets/icons/social/YouTube.png" alt=""></a>
-                        <a target="_blank" href="https://www.pinterest.ca/myrabbi/" class="p-1" aria-label=""><img src="/assets/icons/social/Pinterest.png" alt=""></a>
-                        <a target="_blank" href="https://www.tiktok.com/@theloverabbi" class="p-1" aria-label=""><img src="/assets/icons/social/Tiktok.png" alt=""></a>
-                        <a target="_blank" href="https://ca.linkedin.com/in/ybernath" class="p-1" aria-label=""><img src="/assets/icons/social/LinkedIn.png" alt=""></a>
-                    </div>
-                </div>
             </div>
+
+        </section>
+        <section class="highlight-bg pb-lg-5" id="about_author">
             <div class="row px-5">
-                <div class="col px-sm-2 px-lg-5">
-                    <div class="desktop-only">
-                        <hr class="strong">
-                    </div>
-                        <div class="pt-4 pb-4 d-flex flex-row  flex-wrap gap-sm-2 gap-lg-3 justify-content-sm-start justify-content-md-around">
-                        <a target="_blank" href="https://www.theloverabbi.com/" class="btn btn-outline mx-sm-auto ms-md-1 me-md-auto text-uppercase align-content-center">Learn more about Rabbi Bernath &#8594;</a>
-                        <hr>
-                        <p class="mx-sm-auto me-md-1 ms-md-auto pt-sm-3 pt-md-0">&#169; 2025 Rabbi Yisroel Bernath. All rights reserved.</p>
-                    </div>
-
+                <div class="px-md-5 pt-5 pb-md-4">
+                    <h2 class="before-icon icon-3 icon-right">About the author</h2>
                 </div>
             </div>
-        
+            <div class="cont px-5 pe-5">
+                <div>
+                    <p>
+                        Rabbi Yisorel Bernath, is a Chabad rabbi, relationship
+                        coach, matchmaker, and storyteller whose work sits at
+                        the intersection of soul, psychology, and Jewish wisdom.
+                        Known affectionately as "The Love Rabbi," for over two
+                        decades he has helped hundreds of individuals and
+                        couples navigate the complexities of the human heart,
+                        from heartbreak to healing, from resentment to
+                        forgiveness.
+                    </p>
+                    <p>
+                        Rabbi Bernath lives in Montreal with his wife Sara and
+                        their six children. This book is not just his teaching,
+                        it's his personal journey.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/imgs/rabbi-yisroel-bernath-headshot.jpg"
+                        class="img-fluid rounded square-portrait" alt="" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="container-fluid content-section">
+        <div class="cont p-5 mt-3">
+            <div class="me-auto d-flex align-items-center">
+                <h2 class="upperbold flex-fill">Follow Rabbi Bernath!</h2>
+            </div>
+            <div class="ms-auto">
+                <div
+                    class="social-links d-flex flex-row  flex-wrap gap-sm-2 gap-lg-3 justify-content-sm-start justify-content-md-center">
+                    <a target="_blank" href="https://www.facebook.com/TheLoveRabbi/" class="p-sm-2" aria-label=""><img
+                            src="/assets/icons/social/facebook.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/montrealrabbi/" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/Instagram.png" alt=""></a>
+                    <a target="_blank" href="https://www.threads.net/@montrealrabbi" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/threads-img-1.png" alt=""></a>
+                    <a target="_blank" href="https://x.com/montrealrabbi" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/X.png" alt=""></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCi5mua4-gkhiv7NdbJv_C7w" class="p-1"
+                        aria-label=""><img src="/assets/icons/social/YouTube.png" alt=""></a>
+                    <a target="_blank" href="https://www.pinterest.ca/myrabbi/" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/Pinterest.png" alt=""></a>
+                    <a target="_blank" href="https://www.tiktok.com/@theloverabbi" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/Tiktok.png" alt=""></a>
+                    <a target="_blank" href="https://ca.linkedin.com/in/ybernath" class="p-1" aria-label=""><img
+                            src="/assets/icons/social/LinkedIn.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5">
+            <div class="col px-sm-2 px-lg-5">
+                <div class="desktop-only">
+                    <hr class="strong">
+                </div>
+                <div
+                    class="pt-4 pb-4 d-flex flex-row  flex-wrap gap-sm-2 gap-lg-3 justify-content-sm-start justify-content-md-around">
+                    <a target="_blank" href="https://www.theloverabbi.com/"
+                        class="btn btn-outline mx-sm-auto ms-md-1 me-md-auto text-uppercase align-content-center">Learn
+                        more about Rabbi Bernath &#8594;</a>
+                    <hr>
+                    <p class="mx-sm-auto me-md-1 ms-md-auto pt-sm-3 pt-md-0">&#169; 2025 Rabbi Yisroel Bernath. All
+                        rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -296,10 +317,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
-    
+
     <script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore-compat.js"></script>
-<script src="/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore-compat.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
