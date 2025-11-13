@@ -129,7 +129,7 @@ body {
 
 .container-fluid h1 {
 	--fs: var(--h1-mobile-size);
-	--icon-size: 80px;
+	--icon-size: 70px;
 	--url: url('./assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
@@ -173,9 +173,9 @@ p {
 }
 
 .icon-right{
-	--icon-position: calc(var(--icon-size)/var(--amount, -1));
+	--icon-position: calc(var(--icon-size)/var(--amount, -0.8));
 	position: relative;
-	margin-top: calc(var(--icon-position)*-0.60);
+	margin-top: calc(var(--icon-position)*-0.90);
 	&::before{
 		position: absolute;
 		top: var(--icon-position);
@@ -194,7 +194,7 @@ p {
 }
 
 .before-icon {
-	--icon-size: 80px;
+	--icon-size: 70px;
 	&::before {
 		content: '';
 		background-image: var(--url);
