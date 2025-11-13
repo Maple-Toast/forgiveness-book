@@ -133,6 +133,7 @@ body {
 	--url: url('assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
+	color: var(--main-color-dark);
 
 	text-transform: uppercase;
 	font-weight: 100;
@@ -147,6 +148,7 @@ h2 {
 	font-size: var(--fs);
 	text-transform: uppercase;
 	font-weight: bold;
+	color: var(--main-color-dark);
 	@media screen and (min-width: 768px) {
 		--fs: var(--h2-desktop-size);
 
@@ -384,6 +386,7 @@ footer {
 
 	& h2 {
 		font-size: 2em;
+		color: var(--accent-color-dark);
 	}
 }
 
