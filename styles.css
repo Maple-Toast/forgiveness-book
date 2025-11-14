@@ -313,6 +313,7 @@ nav {
 
 .navbar-nav a {
 	font-size: 20px;
+	color: var(--main-color-dark);
 }
 
 .navbar-nav a:hover,
@@ -410,6 +411,10 @@ footer {
 	& h2 {
 		font-size: 2em;
 		color: var(--accent-color-dark);
+	}
+
+	& p {
+		margin-bottom: 0em;
 	}
 }
 
