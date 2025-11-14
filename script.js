@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // exported so inline handlers (if any) still work
 async function register(e) {
-  if (e && e.preventDefault) e.preventDefault()
+  e.preventDefault()
 
   const name = document.getElementById('nameInput')?.value?.trim() || ''
   const email = document.getElementById('emailInput')?.value?.trim() || ''
