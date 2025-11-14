@@ -10,7 +10,7 @@
 	--main-font-bold: 'Inter Bold';
 	--main-font-italic: 'Inter Italic';
 	--main-font-bold-italic: 'Inter Italic Bold';
-	--h1-mobile-size: 3em;
+	--h1-mobile-size: 2.3em;
 	--h1-desktop-size: 6em;
 	--h2-mobile-size: 2em;
 	--h2-desktop-size: 4em;
@@ -129,7 +129,7 @@ body {
 
 .container-fluid h1 {
 	--fs: var(--h1-mobile-size);
-	--icon-size: 80px;
+	--icon-size: 70px;
 	--url: url('./assets/icons/svg/1.svg');
 	font-family: var(--main-font-regular);
 	font-size: var(--fs);
@@ -173,9 +173,9 @@ p {
 }
 
 .icon-right{
-	--icon-position: calc(var(--icon-size)/var(--amount, -1));
+	--icon-position: calc(var(--icon-size)/var(--amount, -0.8));
 	position: relative;
-	margin-top: calc(var(--icon-position)*-0.60);
+	margin-top: calc(var(--icon-position)*-0.90);
 	&::before{
 		position: absolute;
 		top: var(--icon-position);
@@ -194,7 +194,7 @@ p {
 }
 
 .before-icon {
-	--icon-size: 80px;
+	--icon-size: 70px;
 	&::before {
 		content: '';
 		background-image: var(--url);
@@ -305,6 +305,17 @@ nav {
 	background-color: var(--main-color-light);
 }
 
+.navbar:has(.navbar-toggler[aria-expanded="true"]) {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.navbar-nav a {
+	font-size: 20px;
+	color: var(--main-color-dark);
+}
+
 .navbar-nav a:hover,
 .navbar-nav a:focus {
 	color: var(--accent-color-dark);
@@ -372,7 +383,20 @@ nav {
     width: var(--size);
     object-fit: cover;
     max-width: none;
+
+	
 }
+
+.quote-block:nth-of-type(2) .quote-img img {
+  object-fit: cover;
+  object-position: 25% 25%;
+}
+
+.quote-block:nth-of-type(3) .quote-img img {
+  object-fit: cover;
+  object-position: 75% 25%;
+}
+
 
 
 main>div{
@@ -387,6 +411,10 @@ footer {
 	& h2 {
 		font-size: 2em;
 		color: var(--accent-color-dark);
+	}
+
+	& p {
+		margin-bottom: 0em;
 	}
 }
 
@@ -418,6 +446,8 @@ footer {
     padding: 5px;
     border-radius: 50%;
     background-color: var(--accent-color-dark);
+
+	
 }
 
 @media (min-width: 992px) {
@@ -436,6 +466,12 @@ footer {
 	.mobile-only {
 		display: none;
 	}
+
+	.navbar:has(.navbar-toggler[aria-expanded="true"]) {
+	box-shadow: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
 
 }
 
