@@ -10,10 +10,10 @@
 	--main-font-bold: 'Inter Bold';
 	--main-font-italic: 'Inter Italic';
 	--main-font-bold-italic: 'Inter Italic Bold';
-	--h1-mobile-size: 2.3em;
-	--h1-desktop-size: 6em;
+	--h1-mobile-size: 2.1em;
+	--h1-desktop-size: 5em;
 	--h2-mobile-size: 2em;
-	--h2-desktop-size: 4em;
+	--h2-desktop-size: 3em;
 }
 
 /* inter-regular - latin */
@@ -411,7 +411,10 @@ nav {
 
 
 main>div{
-    gap: 5rem;
+	@media (min-width: 1200px) {
+		gap: 5rem;
+	}
+    
 }
 
 /* footer */
