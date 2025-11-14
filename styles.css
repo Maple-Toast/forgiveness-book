@@ -382,7 +382,20 @@ nav {
     width: var(--size);
     object-fit: cover;
     max-width: none;
+
+	
 }
+
+.quote-block:nth-of-type(2) .quote-img img {
+  object-fit: cover;
+  object-position: 25% 25%;
+}
+
+.quote-block:nth-of-type(3) .quote-img img {
+  object-fit: cover;
+  object-position: 75% 25%;
+}
+
 
 
 main>div{
@@ -428,6 +441,8 @@ footer {
     padding: 5px;
     border-radius: 50%;
     background-color: var(--accent-color-dark);
+
+	
 }
 
 @media (min-width: 992px) {
