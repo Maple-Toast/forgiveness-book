@@ -203,11 +203,18 @@ p {
 		width: var(--icon-size, 40px);
 		height: var(--icon-size, 40px);
 		margin-right: 10px;
+		margin-bottom: 0.6em;
 		display: inline-block;
 	}
 
 	&:hover::before {
 				animation: spin 0.7s 1 forwards ease-in-out;
+	}
+}
+
+.before-icon::before {
+	@media (min-width: 768px) {
+		margin-bottom: 0.2em;
 	}
 }
 
