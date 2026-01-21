@@ -12,7 +12,7 @@
 	--main-font-bold-italic: 'Inter Italic Bold';
 	--h1-mobile-size: 2em;
 	--h1-desktop-size: 4.5em;
-	--h2-mobile-size: 1.8em;
+	--h2-mobile-size: 1.6em;
 	--h2-desktop-size: 2.75em;
 }
 
@@ -449,12 +449,13 @@ footer {
 	color: var(--accent-color-dark);
 
 	& h2 {
-		font-size: 2em;
+		font-size: 1.5em;
 		color: var(--accent-color-dark);
 	}
 
 	& p {
 		margin-bottom: 0em;
+		font-size: 14px;
 	}
 }
 
@@ -465,7 +466,7 @@ footer {
 	border-radius: 50px;
 	outline: 2px solid var(--accent-color-dark);
 	transition: background-color 0.2s;
-	max-width: 325px;
+	max-width: 370px;
 	/* margin-bottom: 2rem; */
     display: inline-flex;
     justify-content: space-around;
@@ -482,12 +483,18 @@ footer {
 }
 
 .social-links a img {
-    max-width: 50px;
-    padding: 5px;
+    max-width: 35px;
+    padding: 2px;
     border-radius: 50%;
     background-color: var(--accent-color-dark);
 
 	
+}
+
+@media (min-width: 768px) {
+	.btn.btn-outline {
+		max-width: 325px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -511,6 +518,15 @@ footer {
 	box-shadow: none;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
+}
+
+.social-links a img {
+    max-width: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: var(--accent-color-dark);
+
+	
 }
 
 }
