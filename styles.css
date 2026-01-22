@@ -482,6 +482,11 @@ footer {
 	}
 }
 
+.learn-more-btn {
+	width: 345px;
+	margin-top: 0.5rem;
+}
+
 .social-links a img {
     max-width: 35px;
     padding: 2px;
@@ -522,7 +527,7 @@ footer {
 
 .social-links a img {
     max-width: 50px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 50%;
     background-color: var(--accent-color-dark);
 
