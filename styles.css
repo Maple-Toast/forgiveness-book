@@ -325,7 +325,7 @@ html, body {
 	font-size: 19px;
 	padding: 0.375rem 1rem;
 
-	&:hover {
+	&:hover, &:focus-visible {
 		background-color: var(--accent-color-light);
 		color: var(--main-color-dark);
 	}
@@ -333,6 +333,16 @@ html, body {
 	&:disabled {
 		background-color: var(--accent-color-light);
 		color: rgb(148, 143, 143);
+	}
+
+	&:active {
+		background-color: var(--accent-color-light) !important;
+		color: var(--main-color-dark) !important;
+	}
+
+	&.show {
+		background-color: var(--accent-color-light);
+		color: var(--main-color-dark);
 	}
 }
 
