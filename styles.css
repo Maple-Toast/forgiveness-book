@@ -407,21 +407,54 @@ nav {
 
 .quote-img {
     display: flex;
+	
     img {
         margin-inline: auto;
-        border: 2px solid var(--accent-color-dark);
 
         @media screen and (min-width: 960px) {
             margin: 0;
         }
     }
+
+	& > .quote-inner-img {
+		position: relative;
+
+		&::before {
+		content: '';
+		display: block;
+		width: 100px;
+		height: 100px;
+		background-color: var(--accent-color-light);
+		position: absolute;
+		right: -17px;
+		top: -17px;
+		border-radius: 10px;
+		z-index: -1;
+	}
+	}
+
+	
+
+		
 }
 
-.square-portrait,
+
 .quote-img img {
     --size: 260px;
     height: var(--size);
-    width: var(--size);
+    width: calc(var(--size) * 1.5);
+    object-fit: cover;
+    /* max-width: none; */
+	position: relative;
+	
+	
+	
+}
+
+.square-portrait {
+    --size: 260px;
+    height: var(--size);
+    width: calc(var(--size));
     object-fit: cover;
     max-width: none;
 
@@ -430,12 +463,12 @@ nav {
 
 .quote-block:nth-of-type(2) .quote-img img {
   object-fit: cover;
-  object-position: 25% 25%;
+  object-position: 20% 20%;
 }
 
 .quote-block:nth-of-type(3) .quote-img img {
   object-fit: cover;
-  object-position: 75% 25%;
+  object-position: 75% 0%;
 }
 
 /* .row.px-5 {
