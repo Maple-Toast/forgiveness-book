@@ -525,6 +525,7 @@ main>div{
 
 footer {
 	color: var(--accent-color-dark);
+	background-color: var(--main-color-darker-light);
 
 	& h2 {
 		font-size: 1.5em;
@@ -570,8 +571,22 @@ footer {
     padding: 2px;
     border-radius: 50%;
     background-color: var(--accent-color-dark);
+	transition: background-color 300ms;
 
+	&:hover {
+		background-color: var(--main-color-dark);
+	}
 	
+}
+
+.cta-link {
+	text-decoration: underline 0.1em #ffffff00;
+	color: var(--accent-color-dark);
+	transition: text-decoration-color 300ms;
+
+	&:hover {
+		text-decoration-color: var(--accent-color-dark);
+	}
 }
 
 @media (min-width: 768px) {
