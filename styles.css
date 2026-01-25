@@ -238,7 +238,11 @@ p {
 }
 
 .before-icon {
-	--icon-size: 70px;
+	--icon-size: 40px;
+
+	@media screen and (min-width: 768px) {
+		--icon-size: 55px;
+	}
 	&::before {
 		content: '';
 		background-image: var(--url);
@@ -598,6 +602,10 @@ nav {
 	
  
   
+}
+
+.featured-container {
+	max-width: 1296px;
 }
 
 /* Responsive iframe wrapper */
