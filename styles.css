@@ -515,8 +515,27 @@ nav {
   margin: auto;
 } */
 
+.splash-text {
+	background-color: var(--main-color-dark);
+	border-radius: 10px;
+	white-space: pre-line;
+	text-align: center;
+	line-height: 1.5em;
+	& h1 {
+		color: var(--pure-white);
+		font-size: 24px;
+		margin-bottom: 0rem;
+
+		& span {
+			font-size: 28px;
+		}
+	}
+
+	
+}
+
 .splash-container {
-  height: 500px;
+  max-height: 570px;
   border-radius: 10px;
   overflow: hidden;
 }
