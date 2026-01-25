@@ -185,6 +185,10 @@ h2 {
 	}
 }
 
+.small-h2 {
+	font-size: 22px;
+}
+
 p {
 	font-family: var(--main-font-regular);
 	font-size: 1em;
@@ -613,13 +617,19 @@ footer {
 	
 }
 
+.link-list li::marker{
+	color: var(--accent-color-dark);
+}
+
 .cta-link {
 	text-decoration: underline 0.1em #ffffff00;
 	color: var(--accent-color-dark);
-	transition: text-decoration-color 300ms;
+	transition-property: text-decoration-color, color;
+	transition-duration: 300ms;
 
-	&:hover {
-		text-decoration-color: var(--accent-color-dark);
+	&:hover, &:focus-visible {
+		color: var(--main-color-dark);
+		text-decoration-color: var(--main-color-dark);
 	}
 }
 
