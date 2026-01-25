@@ -597,7 +597,7 @@ nav {
  	 height: 100%;
 	@media (min-width: 996px) {
 		object-fit: cover;
-  		object-position: center;
+  		object-position: 50% 40%;
 	}
 	
  
@@ -611,9 +611,8 @@ nav {
 /* Responsive iframe wrapper */
 .iframe-container {
   width: 100%;
-  max-width: 740px;
-  max-height: 740px;             /* optional: keeps it from getting too wide on large screens */
-  aspect-ratio: 640 / 1282;     /* original iframe width/height */
+  max-width: 740px;             /* optional: keeps it from getting too wide on large screens */
+  aspect-ratio: 640 / 1000;     /* original iframe width/height */
   border-radius: 10px;          /* optional: matches your splash image styling */
   overflow: hidden;
 }
@@ -623,8 +622,6 @@ nav {
   height: 100%;
   border: 0;
 }
-
-
 
 
 main>div{
