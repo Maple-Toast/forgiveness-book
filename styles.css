@@ -611,9 +611,9 @@ nav {
 /* Responsive iframe wrapper */
 .iframe-container {
   width: 100%;
-  max-width: 740px;             /* optional: keeps it from getting too wide on large screens */
-  aspect-ratio: 640 / 1000;     /* original iframe width/height */
-  border-radius: 10px;          /* optional: matches your splash image styling */
+  max-width: 740px;            
+  aspect-ratio: 640 / 1000;    
+  border-radius: 10px;      
   min-height: 1500px;
 
   @media screen and (min-width: 450px) {
