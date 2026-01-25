@@ -542,12 +542,26 @@ nav {
   max-height: 570px;
   border-radius: 10px;
   overflow: hidden;
+  @media (min-width: 996px) {
+	max-height: 100%;
+	height: 570px;
+  }
+  @media (min-width: 1400px) {
+	height: 650px;
+  }
+  
 }
 
 .splash-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	 width: 100%;
+ 	 height: 100%;
+	@media (min-width: 996px) {
+		object-fit: cover;
+  		object-position: center;
+	}
+	
+ 
+  
 }
 
 
