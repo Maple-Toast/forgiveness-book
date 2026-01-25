@@ -614,10 +614,14 @@ nav {
   max-width: 740px;            
   aspect-ratio: 640 / 1000;    
   border-radius: 10px;      
-  min-height: 1500px;
+  min-height: 1450px;
 
-  @media screen and (min-width: 450px) {
+  @media screen and (min-width: 400px) {
 	min-height: 1400px;
+  }
+
+  @media screen and (min-width: 550px) {
+	min-height: 1350px;
   }
 
   @media screen and (min-width: 768px) {
