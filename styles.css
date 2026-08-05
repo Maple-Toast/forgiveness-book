@@ -28,6 +28,19 @@
         sans-serif;
 }
 
+.dropdown-menu {
+	background-color: var(--main-color-light);
+	border: 0px;
+
+	& .dropdown-item {
+		text-align: center;
+
+		@media screen and (min-width: 1000px) {
+			text-align: left;
+		}
+	}
+}
+
 .emoji {
     font-family: "Segoe UI Emoji" !important;
     font-weight: normal !important;
