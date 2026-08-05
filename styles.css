@@ -16,7 +16,33 @@
 	--h2-desktop-size: 2.75em;
 }
 
-.dropdown-item {
+/* nav */
+
+nav {
+	background-color: var(--main-color-light);
+
+	& ul {
+		list-style-type: none;
+	}
+}
+
+.navbar:has(.navbar-toggler[aria-expanded="true"]) {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.navbar-nav a {
+	font-size: 20px;
+	color: var(--main-color-dark);
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+	color: var(--accent-color-dark);
+}
+
+a.dropdown-item {
     font-family:
         system-ui,
         -apple-system,
@@ -26,6 +52,11 @@
         "Apple Color Emoji",
         "Noto Color Emoji",
         sans-serif;
+
+	&:hover, &:focus-visible {
+		background-color: var(--accent-color-light);
+		color: var(--main-color-dark);
+	}
 }
 
 .dropdown-menu {
@@ -381,31 +412,7 @@ html, body {
 	animation: fadeIn 0.2s 1 forwards ease-in-out;
 }
 
-/* background */
 
-nav {
-	background-color: var(--main-color-light);
-
-	& ul {
-		list-style-type: none;
-	}
-}
-
-.navbar:has(.navbar-toggler[aria-expanded="true"]) {
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-}
-
-.navbar-nav a {
-	font-size: 20px;
-	color: var(--main-color-dark);
-}
-
-.navbar-nav a:hover,
-.navbar-nav a:focus {
-	color: var(--accent-color-dark);
-}
 
 .highlight-bg {
 	background-color: var(--main-color-darker-light);
