@@ -655,6 +655,45 @@ html, body {
   border: 0;
 }
 
+.custom-card {
+	background-color: var(--pure-white);
+	border: 1px solid rgba(40, 19, 6, 0.08);
+	border-radius: 18px;
+	box-shadow: 0 10px 24px rgba(40, 19, 6, 0.08);
+	padding: 1.5rem;
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+	display: block;
+	&:hover,
+	&:focus-within {
+		transform: translateY(-4px);
+		box-shadow: 0 16px 32px rgba(40, 19, 6, 0.12);
+		border-color: var(--accent-color-dark);
+	}
+
+	& .card-title {
+		font-family: var(--main-font-bold);
+		color: var(--main-color-dark);
+		font-size: 1.1rem;
+		letter-spacing: 0.03em;
+		margin-bottom: 0.75rem;
+		text-transform: uppercase;
+	}
+
+	& .card-text {
+		color: var(--main-color-dark);
+		line-height: 1.6;
+	}
+
+	& .btn.btn-outline {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		padding: 2rem;
+	}
+}
 
 main>div{
 	@media (min-width: 1200px) {
