@@ -42,6 +42,14 @@ nav {
 	color: var(--accent-color-dark);
 }
 
+.nav-btn {
+	color: var(--main-color-light) !important;
+
+	&:hover, &:focus-visible {
+		color: var(--main-color-dark) !important;
+	}
+}
+
 a.dropdown-item {
     font-family:
         system-ui,
