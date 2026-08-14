@@ -36,7 +36,7 @@
 </head>
 
 <body>
-   <header class="container-fluid">
+    <header class="container-fluid">
         <div class="row align-items-start">
             <nav class="navbar navbar-expand-lg cont px-4">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -58,7 +58,7 @@
                             <a class="nav-link upperbold" href="./author.html">The Author</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle upperbold" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle upperbold active" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Beyond the book
                             </a>
@@ -98,7 +98,76 @@
                 </h1>
             </div>
         </div>
-        <div class="mx-3 mx-lg-4 pt-4 pt-lg-5 pb-lg-5 ps-5 ps-lg-0 d-flex flex-column flex-md-row gap-1 gap-lg-5 featured-container" style="margin: auto !important;">
+        <div class="cont px-3 pt-5 pb-5 px-lg-5 column-important">
+            <h2 class="before-icon icon-1 icon-right mb-4">Podcasts Featuring Rabbi Bernath</h2>
+            <div class="d-flex flex-wrap">
+                <div class="podcast pod-1">
+                    <a href="https://open.spotify.com/episode/3TI2WF1IDCK9PFCLjFrRYa"
+                        aria-label="Totally Unexpected! Podcast with Rabbi Yisroel Bernath" target="_blank">
+                        <img src="./assets/imgs/pod-1.webp" alt="">
+                    </a>
+                </div>
+                <div class="podcast pod-2">
+                    <a href="https://open.spotify.com/episode/5xNkwyoWaXv8FlMMTIwB0d"
+                        aria-label="The Inside Out Podcast with Rivka & Eda" target="_blank">
+                        <img src="./assets/imgs/pod-3.webp" alt="">
+                    </a>
+                </div>
+                <div class="podcast pod-3">
+                    <a href="https://open.spotify.com/episode/1pDeQllGw6WEMJIAObQqec"
+                        aria-label="Not that kind of Rabbi Podcast with Rabbi Yisroel Bernath" target="_blank">
+                        <img src="./assets/imgs/pod-2.webp" alt="">
+                    </a>
+                </div>
+                <div class="podcast pod-4">
+                    <a href="https://open.spotify.com/episode/1mWTUHTucpnWRF59lEVe7C"
+                        aria-label="North Star Podcast featuring Rabbi Bernath" target="_blank">
+                        <img src="./assets/imgs/pod-4.webp" alt="">
+                    </a>
+                </div>
+                <div class="podcast pod-5">
+                    <a href="https://open.spotify.com/episode/2xxbwvK9vMEbAKBPz4w7Pn"
+                        aria-label="A Positive Podcast featuring Rabbi Bernath" target="_blank">
+                        <img src="./assets/imgs/pod-5.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="highlight-bg">
+            <div class="cont px-3 pt-5 pb-5 px-lg-5 column-important">
+                <h2 class="before-icon icon-2 icon-right mb-4">In the Media</h2>
+                <h3>About the book</h3>
+                <ul>
+                    <li><a href="https://www.thesuburban.com/fyi/rabbi-yisroel-bernath-new-book-called-the-forgiveness-experiment-is-therapeutic/article_edff5c8b-e85c-4651-9a59-e1f22eefa310.html"
+                            class="emphasis-link" target="_blank">Rabbi Yisroel Bernath: New book called The Forgiveness
+                            Experiment is therapeutic</a></li>
+                    <li><a href="https://thecjn.ca/arts-culture/hear-this-rabbis-path-to-forgiveness-as-jews-worldwide-prepare-for-yom-ha-zikaron/"
+                            target="_blank" class="emphasis-link">Hear this rabbi’s path to forgiveness as Jews worldwide
+                            prepare for Yom ha-Zikaron</a></li>
+                </ul>
+                <h3 class="mt-4">Other Appearances</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=95mkZCWiLmo"
+                            class="emphasis-link" target="_blank">
+                            Matty Matheson Is On A Kosher Mission! | Dead Set on Life - S2 Ep.5 </a></li>
+                    <li><a href="https://www.youtube.com/watch?v=jty5SLLdSro"
+                            target="_blank" class="emphasis-link">CA
+                            Biblically Instructed Marriage Today? - Kosher Love - Full Documentary </a></li>
+                </ul>
+            </div>
+        </section>
+         <section>
+            <div class="cont px-3 pt-5 pb-5 px-lg-5 column-important">
+                <h2 class="before-icon icon-3 icon-right mb-4">Request an Appearance</h2>
+                
+                <p>Interested in having Rabbi Bernath on your podcast/show? Select to button below and fill out the form.</p>
+                <button class="btn btn-outline upperbold m-lg-2" onclick="document.querySelector('.appearance-form-wrapper').style.display = 'block'; this.disabled = true">Request an Appearance</button>
+            </div>
+            <div class="appearance-form-wrapper iframe-container m-auto" style="min-height: 200px; height:800px; display: none;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScynwwJ8dl17OOOdAaeHDhvfoI3GIXgWIigxkKgcJXt_nxtqQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </section>
+        <!-- <div class="mx-3 mx-lg-4 pt-4 pt-lg-5 pb-lg-5 ps-5 ps-lg-0 d-flex flex-column flex-md-row gap-1 gap-lg-5 featured-container" style="margin: auto !important;">
             <div class="col-12 col-md-6 col-lg-6">
                 <h2 class="upperbold small-h2">
                     Featured Podcasts
@@ -120,9 +189,9 @@
                 </ul>
             </div>
 
-        </div>
+        </div> -->
     </main>
-   <footer id="footer" class="container-fluid content-section">
+    <footer id="footer" class="container-fluid content-section">
 
         <!-- TOP: Heading + Social Links -->
         <div class="container-lg pt-3">
