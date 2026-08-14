@@ -36,16 +36,52 @@
 </head>
 
 <body>
-    <header class="container-fluid mt-3 mb-2">
+   <header class="container-fluid">
         <div class="row align-items-start">
-            <nav>
-                <ul  class="ms-0">
-                    <li>
-                        <a href="./index.html" class="btn btn-outline ps-3 pe-3 text-uppercase">
-                            ← Return to Home Page
-                        </a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg cont px-4">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ps-xl-4" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav d-flex text-center">
+
+                        <li>
+                            <a class="nav-link upperbold" href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link upperbold" href="./book.html">The book</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link upperbold" href="./author.html">The Author</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle upperbold" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Beyond the book
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./forgiveness-lab.html">The Forgiveness Lab</a>
+                                <a class="dropdown-item" href="./media.html">Media, Press & Podcasts</a>
+                                <a class="dropdown-item" href="./book-tour.html">Speaking Tours & Events</a>
+                            </div>
+                        </li>
+                        <!-- <a  class="nav-link upperbold" href="./book-tour.html">Speaking & Book Tour</a> -->
+                        <li>
+                            <a class="nav-link upperbold" href="./bulk-orders.html">Bulk Orders</a>
+
+                        </li>
+                        <li>
+                            <a class="nav-link upperbold" href="./contact.html" target="_blank">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

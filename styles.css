@@ -4,6 +4,7 @@
 	--main-color-dark: #281306;
 	--accent-color-light: #dbd3cd;
 	--accent-color-dark: #b89d8c;
+	--accent-gold: #e9dd39;
 	--pure-black: #000;
 	--pure-white: #fff;
 	--main-font-regular: 'Inter';
@@ -357,13 +358,70 @@ p {
 	font-weight: 400;
 	font-size: 1.1em;
 	line-height: 1.5em;
-	padding: 2ch;
+	padding: 2ch 0rem;
 	border-radius: 10px;
-	box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0px 4px 6px 3px rgba(0, 0, 0, 0.1); */
 	& > h3 {
 		font-size: 1.3em;
 		margin-bottom: 0.5rem;
 		font-weight: 600;
+		display: inline-block;
+		background-color: var(--main-color-dark);
+		color: var(--main-color-light);
+		padding: 0.5ch 1ch;
+		border-radius: 10px;
+		position: relative;
+		&::before {
+			content: '';
+			background-color: var(--main-color-darker-light);
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			transform: rotate(45deg);
+			top: 13px;
+			left: -15px;
+		}
+		
+	}
+}
+
+.bulk-orders-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	
+	place-items: center;
+	align-items: start;
+
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (min-width: 1080px) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+.emphasis-link {
+	color: var(--main-color-dark);
+	text-decoration-style: wavy;
+	
+
+	&:hover, &:focus-visible {
+		color: var(--accent-color-dark);
+	}
+}
+
+.bernath-headshot {
+	width: 500px;
+	height: 500px;
+	background-image: url('./assets/imgs/headshot-1.png');
+	background-size: cover;
+	background-position: 50% 30%;
+	
+	@media screen and (min-width: 1440px) {
+		width: 500px;
+		height: 500px;
 	}
 }
 
@@ -687,6 +745,10 @@ html, body {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.carousel {
+	min-height: 300px;
 }
 
 .custom-card {
