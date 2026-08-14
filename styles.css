@@ -435,13 +435,33 @@ p {
 .bernath-headshot {
 	width: 500px;
 	height: 500px;
-	background-image: url('./assets/imgs/headshot-1.png');
+	background-image: url('./assets/imgs/headshot-brown.png');
 	background-size: cover;
 	background-position: 50% 30%;
 	
-	@media screen and (min-width: 1440px) {
-		width: 500px;
-		height: 500px;
+	/* @media screen and (min-width: 1440px) {
+		position: absolute;
+		bottom: -1000;
+	} */
+}
+
+.home-hero-wrapper {
+	background-color: var(--main-color-dark);
+
+	& > * {
+		color: var(--main-color-light);
+	}
+}
+
+.home-heading {
+	color: var(--main-color-light) !important;
+}
+
+.home-cta {
+	border: 2px solid var(--main-color-light) !important;
+
+	&:hover, &:focus {
+		border-color: var(--main-color-darker-light);
 	}
 }
 
