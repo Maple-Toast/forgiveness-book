@@ -665,6 +665,32 @@ html, body {
   margin: auto;
 } */
 
+.heading-wrapper {
+	position: relative;
+}
+
+.heading-section {
+	--width: 100%;
+
+	width: var(--width);
+	position: absolute;
+	bottom: -75px;
+	left: calc(50% - (var(--width) / 2));
+	max-width: 1304px;
+
+	@media screen and (min-width: 500px) {
+		--width: 500px;
+	}
+
+	@media screen and (min-width: 768px) {
+		--width: 768px;
+	}
+
+	@media screen and (min-width: 1300px) {
+		--width: 1300px;
+	}
+}
+
 .splash-text {
 	background-color: var(--main-color-dark);
 	border-radius: 10px;
@@ -673,11 +699,12 @@ html, body {
 	line-height: 1.5em;
 	& h1 {
 		color: var(--pure-white);
-		font-size: 24px;
+		font-size: 32px;
 		margin-bottom: 0rem;
+		font-weight: 600;
 
 		& span {
-			font-size: 28px;
+			font-size: 20px;
 		}
 	}
 
@@ -686,7 +713,6 @@ html, body {
 
 .splash-container {
   max-height: 570px;
-  border-radius: 10px;
   overflow: hidden;
   @media (min-width: 996px) {
 	max-height: 100%;
