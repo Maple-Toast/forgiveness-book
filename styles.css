@@ -80,6 +80,10 @@ nav {
 	}
 }
 
+.nav-btn.preorder-btn.btn.upperbold.dark-nav-btn {
+	border: 2px solid var(--accent-color-light);
+}
+
 a.dropdown-item {
     font-family:
         system-ui,
