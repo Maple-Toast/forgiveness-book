@@ -34,6 +34,24 @@ nav {
 	}
 }
 
+
+.dark-theme {
+	background-color: var(--main-color-dark);
+	
+
+	& > div ul li a {
+		color: var(--accent-color-light);
+
+		&.active {
+			color: var(--accent-color-dark) !important;
+		}
+	}
+
+	& > div ul li .dropdown-menu {
+		background-color: var(--main-color-dark);
+	}
+}
+
 .navbar:has(.navbar-toggler[aria-expanded="true"]) {
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	border-bottom-left-radius: 50%;
@@ -265,7 +283,7 @@ h3 {
 
 p {
 	font-family: var(--main-font-regular);
-	font-size: 1em;
+	font-size: 18px;
 }
 
 .icon-1{
