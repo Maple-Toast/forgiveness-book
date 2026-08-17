@@ -26,10 +26,6 @@ nav {
 		list-style-type: none;
 
 		& li {
-			& a.active {
-				text-decoration: 2px underline;
-				text-decoration-offset: 2px;
-			}
 
 			& a.active:hover {
 				color: var(--accent-color-dark) !important;
@@ -45,12 +41,16 @@ nav {
 }
 
 .navbar-nav a {
-	font-size: 20px;
+	font-size: 18px;
 	color: var(--main-color-dark);
 }
 
+.navbar-nav > li > .text-logo > a > .upperbold{
+	font-weight: 700;
+}
+
 .navbar-nav a:hover,
-.navbar-nav a:focus {
+.navbar-nav a:focus-visible {
 	color: var(--accent-color-dark);
 }
 
@@ -678,6 +678,11 @@ html, body {
 
 .carousel-control {
 	width: 7%;
+	
+
+	& > span {
+		color: var(--accent-color-dark);
+	}
 }
 
 .carousel-text > *{
@@ -688,6 +693,39 @@ html, body {
 	border: 2px solid var(--accent-color-dark);
 	border-radius: 10px;
 	min-height: 70%;
+	
+
+	@media (min-width: 1000px) {
+		max-width: 520px;
+	}
+
+	& > p {
+		overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+	}
+}
+
+.carousel-indicators {
+
+	@media (min-width: 1000px) {
+		bottom: -50px;
+	}
+	
+
+	& > button {
+		background-color: var(--accent-color-dark);
+	}
+}
+
+.stars {
+	display: inline-block;
+	color: var(--main-color-light);
+	background-color: var(--accent-color-dark);
+	margin-bottom: 1rem;
+	padding: 0.2rem 0.5rem;
+	border-radius: 5px;
 }
 
 .quote-block:nth-of-type(2) .quote-img img {
@@ -698,6 +736,10 @@ html, body {
 .quote-block:nth-of-type(3) .quote-img img {
   object-fit: cover;
   object-position: 50% 0%;
+}
+
+.aleeza img {
+	object-position: 50% 20% !important;
 }
 
 /* .row.px-5 {
