@@ -787,14 +787,23 @@ html, body {
 		--width: 500px;
 	}
 
-	@media screen and (min-width: 768px) {
+	/* @media screen and (min-width: 768px) {
 		--width: 768px;
-	}
+	} */
 
-	@media screen and (min-width: 1300px) {
+	/* @media screen and (min-width: 1300px) {
 		--width: 1300px;
+	} */
+
+	&.the-author-title {
+	
+	@media screen and (min-width: 768px) {
+		--width: 680px;
 	}
 }
+}
+
+
 
 .splash-text {
 	background-color: var(--main-color-dark);
@@ -841,9 +850,11 @@ html, body {
   
 }
 
+
+
 .book-tour-splash {
   max-height: 300px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   @media (min-width: 996px) {
 	max-height: 100%;
