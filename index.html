@@ -38,7 +38,7 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-start">
-            <nav class="navbar navbar-expand-lg cont px-4">
+            <nav class="navbar navbar-expand-lg cont flex-row justify-content-center px-4">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +51,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link" href="./index.html"
+                                <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal active" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -128,7 +130,7 @@
                         </ul> -->
                     </div>
                 </section>
-                <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end">
+                <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end p-0">
                     <div class="bernath-headshot mt-xl-5"></div>
                 </div>
             </div>
@@ -756,8 +758,14 @@
                         their six children. This book is not just his teaching,
                         it's his personal journey.
                     </p>
+                    <div>
+                    <a href="./author.html" class="btn btn-outline upperbold text-uppercase mt-2"
+                        style="font-weight: normal;">
+                        Learn more →
+                    </a>
                 </div>
-                <div class="portrait me-4">
+                </div>
+                <div class="portrait" style="margin-bottom: 1rem;">
                     <span class="portrait-inner">
                         <img src="./assets/imgs/rabbi-yisroel-bernath-headshot-2.jpg"
                             class="img-fluid rounded square-portrait" alt="" />
@@ -765,14 +773,7 @@
                 </div>
 
             </div>
-            <div class="cont px-3 px-lg-5">
-                <div>
-                    <a href="./author.html" class="btn btn-outline upperbold text-uppercase"
-                        style="font-weight: normal;">
-                        Learn more →
-                    </a>
-                </div>
-            </div>
+            
         </section>
         <section class="content-section row px-3 pt-5 px-lg-5" id="beyond_the_book">
             <div class="px-xxl-5">
