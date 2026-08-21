@@ -63,8 +63,15 @@ nav {
 	color: var(--main-color-dark);
 }
 
+
+
 .navbar-nav > li > .text-logo > a > .upperbold{
-	font-weight: 700;
+	font-weight: 500;
+}
+
+.navbar-nav > li > .text-logo {
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 .navbar-nav a:hover,
@@ -112,6 +119,10 @@ a.dropdown-item {
 			text-align: left;
 		}
 	}
+}
+
+.navbar-nav > li > .text-logo > a{
+	font-size: 1.3rem;
 }
 
 .emoji {
@@ -1046,6 +1057,7 @@ footer {
 @media (min-width: 992px) {
 	.navbar-nav {
 		margin: 1rem 0;
+		align-items: center;
 
 		a {
 			margin-right: 2rem;
