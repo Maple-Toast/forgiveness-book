@@ -514,16 +514,19 @@ p {
 }
 
 .bernath-headshot {
-	width: 500px;
-	height: 500px;
+	--width: 400px;
+	--height: 400px;
+
+	width: var(--width);
+	height: var(--height);
 	background-image: url('./assets/imgs/headshot-0.png');
 	background-size: cover;
 	background-position: 50% 30%;
 
-	/* @media screen and (min-width: 1440px) {
-		position: absolute;
-		bottom: -1000;
-	} */
+	@media screen and (min-width: 700px) {
+		--width: 540px;
+	--height: 540px;
+	}
 }
 
 .home-hero-wrapper {
@@ -873,7 +876,7 @@ body {
 
 .quote-block:nth-of-type(3) .quote-img img {
 	object-fit: cover;
-	object-position: 50% 0%;
+	object-position: 100% 0%;
 }
 
 .aleeza img {
