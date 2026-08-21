@@ -138,7 +138,7 @@ a.dropdown-item {
 	& .dropdown-item {
 		text-align: center;
 
-		@media screen and (min-width: 1000px) {
+		@media screen and (min-width: 1200px) {
 			text-align: left;
 		}
 	}
@@ -894,18 +894,13 @@ body {
 }
 
 .heading-section {
-	--width: 100%;
+	--width: calc(100vw - 2rem);
 	--bottom: -85px;
-
-	width: var(--width);
-	max-width: 1304px;
-
-	@media screen and (min-width: 500px) {
-		--width: 500px;
-		position: absolute;
+	position: absolute;
 		bottom: var(--bottom);
 		left: calc(50% - (var(--width) / 2));
-	}
+	width: var(--width);
+	max-width: 1304px;
 
 	@media screen and (min-width: 768px) {
 		--width: 680px;
@@ -927,7 +922,7 @@ body {
 
 .splash-text {
 	background-color: var(--main-color-dark);
-	border-radius: 0px;
+	border-radius: 10px;
 	white-space: pre-line;
 	text-align: center;
 	line-height: 1.5em;
@@ -944,9 +939,9 @@ body {
 		}
 	}
 
-	@media (min-width: 500px) {
+	/* @media (min-width: 500px) {
 		border-radius: 10px;
-	}
+	} */
 
 
 }
@@ -1244,14 +1239,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-	.navbar-nav {
-		margin: 1rem 0;
-		align-items: center;
-
-		a {
-			margin-right: 2rem;
-		}
-	}
 
 	.desktop-only {
 		display: block;
@@ -1276,6 +1263,17 @@ footer {
 
 	}
 
+}
+
+@media (min-width: 1200px) {
+	.navbar-nav {
+		margin: 1rem 0;
+		align-items: center;
+
+		a {
+			margin-right: 2rem;
+		}
+	}
 }
 
 @keyframes fadeIn {
