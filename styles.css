@@ -1020,28 +1020,90 @@ body {
 .iframe-container {
 	width: 100%;
 	max-width: 740px;
-	aspect-ratio: 640 / 1000;
+	margin: 0 auto;
 	border-radius: 10px;
-	min-height: 1450px;
+	overflow: hidden;
 
-	@media screen and (min-width: 400px) {
-		min-height: 1400px;
+	iframe {
+		display: block;
+		width: 100%;
+		border: 0;
+	}
+}
+
+
+/*
+ * Short forms
+ */
+.iframe-container.form-short {
+	iframe {
+		height: 750px;
 	}
 
-	@media screen and (min-width: 550px) {
-		min-height: 1350px;
+	@media screen and (min-width: 400px) {
+		iframe {
+			height: 700px;
+		}
 	}
 
 	@media screen and (min-width: 768px) {
-		min-height: 1300px;
+		iframe {
+			height: 650px;
+		}
 	}
 }
 
-.iframe-container iframe {
-	width: 100%;
-	height: 100%;
-	border: 0;
+
+/*
+ * Medium forms
+ */
+.iframe-container.form-medium {
+	iframe {
+		height: 1100px;
+	}
+
+	@media screen and (min-width: 400px) {
+		iframe {
+			height: 1050px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		iframe {
+			height: 950px;
+		}
+	}
 }
+
+
+/*
+ * Long forms
+ */
+.iframe-container.form-long {
+	iframe {
+		height: 1500px;
+	}
+
+	@media screen and (min-width: 400px) {
+		iframe {
+			height: 1450px;
+		}
+	}
+
+	@media screen and (min-width: 550px) {
+		iframe {
+			height: 1400px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		iframe {
+			height: 1300px;
+		}
+	}
+}
+
+
 
 .carousel {
 	min-height: 300px;
