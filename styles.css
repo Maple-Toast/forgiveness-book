@@ -926,6 +926,7 @@ body {
 	white-space: pre-line;
 	text-align: center;
 	line-height: 1.5em;
+	padding-inline: 1ch;
 
 	& h1 {
 		color: var(--pure-white);
@@ -934,8 +935,12 @@ body {
 		font-weight: 600;
 
 		& span {
-			font-size: 20px;
+			font-size: 16px;
 			font-weight: normal;
+
+			@media (min-width: 500px) {
+				font-size: 20px;
+			}
 		}
 	}
 
