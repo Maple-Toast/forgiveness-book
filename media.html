@@ -38,7 +38,9 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-start dark-theme">
-           <nav class="navbar navbar-expand-lg cont px-4 dark-theme">
+           <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4 dark-theme">
+            <p class="mobile-brand uppercase d-xl-none">The <span class="upperbold">Forgiveness</span>
+                                    Experiment</a></p>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +53,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link upperbold" href="./index.html"
+                               <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -83,7 +87,7 @@
                             <a class="nav-link upperbold" href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+                            <a class="nav-btn btn upperbold dark-nav-btn buy-now-btn" href="./where-to-buy.html">Buy now</a>
 
                         </li>
                     </ul>
@@ -94,14 +98,14 @@
     <main class="container-fluid">
 
         <div class="heading-wrapper">
-            <div class="mb-1 mb-lg-4 splash-container">
-                <img src="./assets/imgs/podcast-feature.png" alt="">
+            <div class="mb-md-4 splash-container">
+                <img src="./assets/imgs/podcast-feature.png" style="--position: 80% 50%;" alt="">
             </div>
             
             <div class="mb-1 mb-lg-4 heading-section">
                 <div class="splash-text">
                     <h1 class="upperbold">Media, Press & Podcasts
-                        <span class="larger upperbold">Subtitle</span>
+                        <span class="larger">The Story Beyond the Pages</span>
                     </h1>
                 </div>
             </div>
@@ -144,7 +148,7 @@
         <section class="highlight-bg">
             <div class="cont px-3 pt-5 pb-5 px-lg-5 column-important">
                 <h2 class="before-icon icon-2 icon-right mb-4">In the Media</h2>
-                <h3>About the book</h3>
+                <h3 class="uppercase">About the book</h3>
                 <ul>
                     <li><a href="https://www.thesuburban.com/fyi/rabbi-yisroel-bernath-new-book-called-the-forgiveness-experiment-is-therapeutic/article_edff5c8b-e85c-4651-9a59-e1f22eefa310.html"
                             class="emphasis-link" target="_blank">Rabbi Yisroel Bernath: New book called The Forgiveness
@@ -153,7 +157,7 @@
                             target="_blank" class="emphasis-link">Hear this rabbi’s path to forgiveness as Jews worldwide
                             prepare for Yom ha-Zikaron</a></li>
                 </ul>
-                <h3 class="mt-4">Other Appearances</h3>
+                <h3 class="mt-4 uppercase">Other Appearances</h3>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=95mkZCWiLmo"
                             class="emphasis-link" target="_blank">
@@ -173,7 +177,7 @@
                     <button class="btn btn-outline upperbold text-uppercase m-lg-2" onclick="document.querySelector('.appearance-form-wrapper').style.display = 'block'; this.disabled = true">Request an Appearance</button>
                 </div>
             </div>
-            <div class="appearance-form-wrapper iframe-container m-auto" style="min-height: 200px; height:800px; display: none;">
+            <div class="iframe-container appearance-form-wrapper form-medium" style="display: none;">
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScynwwJ8dl17OOOdAaeHDhvfoI3GIXgWIigxkKgcJXt_nxtqQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </section>

@@ -36,9 +36,11 @@
 </head>
 
 <body>
-     <header class="container-fluid">
+    <header class="container-fluid">
         <div class="row align-items-start dark-theme">
-           <nav class="navbar navbar-expand-lg cont px-4 dark-theme">
+           <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4 dark-theme">
+            <p class="mobile-brand uppercase d-xl-none">The <span class="upperbold">Forgiveness</span>
+                                    Experiment</a></p>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +53,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link upperbold" href="./index.html"
+                               <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -69,7 +73,7 @@
                                 Beyond the book
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="./forgiveness-lab.html">The Forgiveness Lab</a>
+                                <a class="dropdown-item active" href="./forgiveness-lab.html">The Forgiveness Lab</a>
                                 <a class="dropdown-item" href="./media.html">Media, Press & Podcasts</a>
                                 <a class="dropdown-item" href="./speaking-and-book-tour.html">Speaking Tours & Events</a>
                             </div>
@@ -83,7 +87,7 @@
                             <a class="nav-link upperbold" href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+                            <a class="nav-btn btn upperbold dark-nav-btn buy-now-btn" href="./where-to-buy.html">Buy now</a>
 
                         </li>
                     </ul>
@@ -94,19 +98,23 @@
     <main class="container-fluid">
 
         <div class="heading-wrapper">
-            <div class=" mb-1 mb-lg-4 splash-container">
+            <div class="splash-container">
                 <img src="./assets/imgs/forgivenesslab.png" alt="">
             </div>
 
-            <div class=" mb-1 mb-lg-4 heading-section">
+            <div class=" heading-section" style="--bottom: -75px">
                 <div class="splash-text">
                     <h1 class="upperbold">The Forgiveness Lab
-                        <span class="larger upperbold">Subtitle</span>
+                        <span class="larger upperbold">An Immersive Healing Experience</span>
                     </h1>
                 </div>
             </div>
         </div>
-        <section id="the_lab">
+        
+        
+       
+        
+        <section id="the_lab" class="pt-5">
             <div class="cont px-3 pt-5 px-lg-5 column-important">
 
                 <p>The Forgiveness Lab is your personal path to healing and forgiveness. Join one of our cohorts and
@@ -116,7 +124,7 @@
                     If you’d like to be informed of the next cohort to launch, leave us your name and email here to join
                     the waitlist:
                 </p>
-                <div style="max-width: 600px; margin: 0 auto;">
+                <div class="iframe-container form-short">
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLScFu3b0VzHpdplDow7Yjhw-Gh-84RYGo40dM10X450g3chLaQ/viewform?embedded=true"
                         width="640" height="551" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -308,9 +316,6 @@
                 </section>
 
         </section>
-        ```
-
-
         </div>
         </section>
         <section id="bring_the_rabbi">

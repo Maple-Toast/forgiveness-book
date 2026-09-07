@@ -38,7 +38,9 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-start dark-theme">
-           <nav class="navbar navbar-expand-lg cont px-4 dark-theme">
+           <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4 dark-theme">
+            <p class="mobile-brand uppercase d-xl-none">The <span class="upperbold">Forgiveness</span>
+                                    Experiment</a></p>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +53,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link upperbold" href="./index.html"
+                               <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -83,7 +87,7 @@
                             <a class="nav-link upperbold" href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+                            <a class="nav-btn btn upperbold dark-nav-btn buy-now-btn" href="./where-to-buy.html">Buy now</a>
 
                         </li>
                     </ul>
@@ -94,11 +98,11 @@
     <main class="container-fluid">
 
         <div class="heading-wrapper">
-            <div class="mb-1 mb-lg-4 splash-container">
+            <div class="mb-md-4 splash-container">
                 <img src="./assets/imgs/about-bernath.png" alt="">
             </div>
             
-            <div class="mb-1 mb-lg-4 heading-section">
+            <div class="mb-1 mb-lg-4 heading-section the-author-title">
                 <div class="splash-text">
                     <h1 class="larger upperbold">The Author
                         <span class="upperbold">Rabbi, podcaster, matchmaker, author, speaker</span>
@@ -106,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <section id="the_story">
+        <section id="the_story" class="mt-5">
             <div class="cont px-3 pt-5 pb-5 px-lg-5 column-important">
                 <h2 class="before-icon icon-1 icon-right mb-4">The Story behind The Book</h2>
                 <p class="p-emphasis">In my early twenties, I went through a personal betrayal that

@@ -38,7 +38,9 @@
 <body>
    <header class="container-fluid">
         <div class="row align-items-start dark-theme">
-           <nav class="navbar navbar-expand-lg cont px-4 dark-theme">
+           <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4 dark-theme">
+            <p class="mobile-brand uppercase d-xl-none">The <span class="upperbold">Forgiveness</span>
+                                    Experiment</a></p>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +53,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link upperbold" href="./index.html"
+                               <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -64,7 +68,7 @@
                             <a class="nav-link upperbold" href="./author.html">The Author</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle upperbold active" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle upperbold" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Beyond the book
                             </a>
@@ -83,7 +87,7 @@
                             <a class="nav-link upperbold" href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+                            <a class="nav-btn btn upperbold dark-nav-btn buy-now-btn" href="./where-to-buy.html">Buy now</a>
 
                         </li>
                     </ul>
@@ -94,63 +98,101 @@
     <main class="container-fluid">
 
         <div class="heading-wrapper">
-            <div class="mb-4 splash-container book-tour-splash">
+            <div class="splash-container book-tour-splash">
                 <img src="./assets/imgs/where-to-buy.png" alt="">
             </div>
-            
-            <div class="heading-section">
+
+            <div class="heading-section" style="--bottom: -70px;">
                 <div class="splash-text">
                     <h1 class="upperbold">Where to Buy
-                        <span class="larger upperbold speaking-header">Subtitle</span>
+                        <span class="larger upperbold speaking-header">The Book Awaits</span>
                     </h1>
                 </div>
             </div>
         </div>
+        <div class="p-2 p-sm-3 p-md-3 highlight-bg"></div>
         <section id="cards" class="highlight-bg pb-5">
+           
             <div class="cont px-3 pt-5 px-lg-5 align-items-start">
-                
-                    <div class="section-emphasis">
-                        <h3>Canada</h3>
-                        <ul>
-                            <li><a href="https://www.amazon.ca/dp/006304182X" target="_blank" class="emphasis-link">Print</a></li>
-                            <li><a href="https://www.barnesandnoble.ca/books/the-forgiveness-experiment/9780063041825" class="emphasis-link" target="_blank">Kindle</a></li>
-                            <li><a href="https://www.chapters.indigo.ca/books/the-forgiveness-experiment/9780063041825" target="_blank" class="emphasis-link">Audible</a></li>
-                            <li><a href="https://www.kobo.com/ca/en/book/the-forgiveness-experiment" target="_blank" class="emphasis-link">Kobo</a></li>
-                        </ul>
-                    </div>
-              
-                <div class="section-emphasis">
-                    <h3>United States</h3>
-                    <ul>
-                        <li><a href="https://www.amazon.ca/dp/006304182X" target="_blank" class="emphasis-link">Print</a></li>
-                        <li><a href="https://www.barnesandnoble.ca/books/the-forgiveness-experiment/9780063041825" target="_blank" class="emphasis-link">Kindle</a></li>
-                        <li><a href="https://www.chapters.indigo.ca/books/the-forgiveness-experiment/9780063041825" target="_blank" class="emphasis-link">Audible</a></li>
-                        <li><a href="https://www.kobo.com/ca/en/book/the-forgiveness-experiment" target="_blank" class="emphasis-link">Kobo</a></li>
-                    </ul>
-               </div>
-                <div class="section-emphasis">
-                    <h3>International</h3>
-                    <ul>
-                        <li><a href="https://www.amazon.ca/dp/006304182X" target="_blank" class="emphasis-link">Print</a></li>
-                        <li><a href="https://www.barnesandnoble.ca/books/the-forgiveness-experiment/9780063041825" target="_blank" class="emphasis-link">Kindle</a></li>
-                        <li><a href="https://www.chapters.indigo.ca/books/the-forgiveness-experiment/9780063041825" target="_blank" class="emphasis-link">Audible</a></li>
-                        <li><a href="https://www.kobo.com/ca/en/book/the-forgiveness-experiment" target="_blank" class="emphasis-link">Kobo</a></li>
-                    </ul>
-                
-            </div>
-            <!-- <div id="formHolder"></div> -->
+
+    <div class="section-emphasis">
+        <h3>Canada</h3>
+        <ul>
+            <li><a href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your/dp/1069217638/ref=tmm_pap_swatch_0"
+                    target="_blank" class="emphasis-link">Paperback — Amazon</a></li>
+            <li><a href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your/dp/1069217646"
+                    target="_blank" class="emphasis-link">Hardcover — Amazon</a></li>
+            <li>
+                E-Book —
+                <a href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your-ebook/dp/B0FR2QNJL6/ref=tmm_kin_swatch_0"
+                    target="_blank" class="emphasis-link">Amazon Kindle</a> |
+                <a href="https://www.indigo.ca/products/the-forgiveness-experiment-what-would-your-life-look-like-if-you-let-it-all-go?variant=46699922817234"
+                    target="_blank" class="emphasis-link">Indigo</a> |
+                <a href="https://www.kobo.com/ca/en/book/the-forgiveness-experiment" target="_blank"
+                    class="emphasis-link">Rakuten Kobo</a>
+            </li>
+            <li><a href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your/dp/B0GMS6YCLJ/ref=tmm_aud_swatch_0"
+                    target="_blank" class="emphasis-link">Audiobook — Audible</a></li>
+        </ul>
+    </div>
+
+    <div class="section-emphasis">
+        <h3>United States</h3>
+        <ul>
+            <li>
+                Paperback —
+                <a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217638/ref=tmm_pap_swatch_0"
+                    target="_blank" class="emphasis-link">Amazon</a> |
+                <a href="https://www.target.com/p/the-forgiveness-experiment-by-yisroel-bernath-paperback/-/A-1009439195"
+                    target="_blank" class="emphasis-link">Target</a> |
+                <a href="https://seforimdeals.com/products/the-forgiveness-experiment" target="_blank"
+                    class="emphasis-link">Sefarim Deals</a> |<br>
+                <a href="https://www.booksamillion.com/p/Forgiveness-Experiment/Yisroel-Bernath/9781069217639"
+                    target="_blank" class="emphasis-link">Books-A-Million</a>
+            </li>
+            <li><a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217646/ref=tmm_hrd_swatch_0"
+                    target="_blank" class="emphasis-link">Hardcover — Amazon</a></li>
+            <li><a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your-ebook/dp/B0FR2QNJL6/ref=tmm_kin_swatch_0"
+                    target="_blank" class="emphasis-link">E-Book — Amazon Kindle</a></li>
+            <li>
+                Audiobook —
+                <a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/B0GMRY55F9/ref=tmm_aud_swatch_0"
+                    target="_blank" class="emphasis-link">Audible</a> |
+                <a href="https://open.spotify.com/show/7fuUkuX3B5s9pZyf9NbcHZ?si=VP4BKJ8MTTe_iaMyC8-K2g&utm_source=copy-link&nd=1&dlsi=a104d8280ac4422e"
+                    target="_blank" class="emphasis-link">Spotify</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-emphasis">
+        <h3>United Kingdom</h3>
+        <ul>
+            <li><a href="https://www.amazon.co.uk/Forgiveness-Experiment-What-Would-Your/dp/1069217638/ref=tmm_pap_swatch_0"
+                    target="_blank" class="emphasis-link">Paperback — Amazon</a></li>
+            <li><a href="https://www.amazon.co.uk/Forgiveness-Experiment-What-Would-Your/dp/1069217646/ref=tmm_hrd_swatch_0"
+                    target="_blank" class="emphasis-link">Hardcover — Amazon</a></li>
+            <li><a href="https://www.amazon.co.uk/Forgiveness-Experiment-What-Would-Your-ebook/dp/B0FR2QNJL6/ref=tmm_kin_swatch_0"
+                    target="_blank" class="emphasis-link">E-Book — Amazon Kindle</a></li>
+            <li><a href="https://www.amazon.co.uk/Forgiveness-Experiment-What-Would-Your/dp/B0GMS7788K/ref=tmm_aud_swatch_0"
+                    target="_blank" class="emphasis-link">Audiobook — Audible</a></li>
+        </ul>
+    </div>
+
+</div>
+
 
         </section>
         <section id="expectations" class="pb-5">
             <div class="cont px-3 pt-5 px-lg-5 column-important">
                 <h2 class="before-icon icon-1 icon-right mb-4">Bulk Orders
                 </h2>
-                <p>Need 10+ books? Send a request via <a href="./bulk-orders.html" class="emphasis-link">Bulk Orders</a> for special pricing.
+                <p>Need 10+ books? Send a request via <a href="./bulk-orders.html" class="emphasis-link">Bulk Orders</a>
+                    for special pricing.
 
                 </p>
             </div>
         </section>
-       
+
 
     </main>
     <footer id="footer" class="container-fluid content-section">

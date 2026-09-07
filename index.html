@@ -38,7 +38,7 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-start">
-            <nav class="navbar navbar-expand-lg cont px-4">
+            <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -51,9 +51,11 @@
 
                         <li>
                             <span class="text-logo">
-                                <a class="nav-link upperbold active" href="./index.html"
+                                <a class="nav-link d-none d-lg-inline" href="./index.html"
                                     aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
                                     Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal active" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
                             </span>
                         </li>
                         <li>
@@ -83,7 +85,7 @@
                             <a class="nav-link upperbold" href="./contact.html">Contact</a>
                         </li>
                         <li>
-                            <a class="nav-btn preorder-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+                            <a class="nav-btn buy-now-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
 
                         </li>
                     </ul>
@@ -92,7 +94,7 @@
         </div>
     </header>
     <main class="container-fluid">
-        <div class="home-hero-wrapper">
+        <div class="home-hero-wrapper pt-5">
             <div class="row px-3 px-lg-5 align-items-center">
                 <section class="col col-12 col-xl-7 flex-grow-lg-1 clean ps-lg-0">
                     <h1 class="d-flex flex-column before-icon home-heading">
@@ -128,7 +130,7 @@
                         </ul> -->
                     </div>
                 </section>
-                <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end">
+                <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end p-0">
                     <div class="bernath-headshot mt-xl-5"></div>
                 </div>
             </div>
@@ -254,7 +256,7 @@
 
         </div>
         <section>
-            <div class="row px-3 pt-4 px-lg-5 pb-lg-5">
+            <div class="row px-3 pt-5 pb-4 pb-lg-5">
                 <div class="px-xxl-5">
                     <h2 class="before-icon icon-1 icon-right mb-2 mb-md-4">Reviews by Readers</h2>
                     <!-- DESKTOP CAROUSEL 2 REVIEWS PER SLIDE-->
@@ -732,6 +734,7 @@
 
                     </div>
                 </div>
+                <div class="p-2"></div>
         </section>
         <section class="highlight-bg pb-5" id="about_author">
             <div class="row px-3 pt-4 px-lg-5">
@@ -756,8 +759,14 @@
                         their six children. This book is not just his teaching,
                         it's his personal journey.
                     </p>
+                    <div>
+                    <a href="./author.html" class="btn btn-outline upperbold text-uppercase mt-2"
+                        style="font-weight: normal;">
+                        Learn more →
+                    </a>
                 </div>
-                <div class="portrait me-4">
+                </div>
+                <div class="portrait" style="margin-bottom: 1rem;">
                     <span class="portrait-inner">
                         <img src="./assets/imgs/rabbi-yisroel-bernath-headshot-2.jpg"
                             class="img-fluid rounded square-portrait" alt="" />
@@ -765,14 +774,7 @@
                 </div>
 
             </div>
-            <div class="cont px-3 px-lg-5">
-                <div>
-                    <a href="./author.html" class="btn btn-outline upperbold text-uppercase"
-                        style="font-weight: normal;">
-                        Learn more →
-                    </a>
-                </div>
-            </div>
+            
         </section>
         <section class="content-section row px-3 pt-5 px-lg-5" id="beyond_the_book">
             <div class="px-xxl-5">
