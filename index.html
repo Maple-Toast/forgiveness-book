@@ -38,119 +38,104 @@
 <body>
     <header class="container-fluid">
         <div class="row align-items-start">
-            <nav class="navbar navbar-expand-lg cont px-4">
+            <nav class="navbar navbar-expand-xl cont flex-row justify-content-center px-4">
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse ps-xl-4" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-flex text-center">
-                        <a class="nav-link upperbold" href="#about_book">About the book</a>
-                        <a class="nav-link upperbold" href="#advance_praise">Advance Praise</a>
-                        <a class="nav-link upperbold" href="#about_author">About the Author</a>
-                        <a class="nav-link upperbold" href="#beyond_the_book">Beyond the Book</a>
-                        <a  class="nav-link upperbold" href="./book-tour.html">Speaking & Book Tour</a>
-                        <a class="nav-link upperbold" href="https://www.theloverabbi.com/#contact"
-                            target="_blank">Contact</a>
-                    </div>
+
+                    <ul class="navbar-nav d-flex text-center">
+
+                        <li>
+                            <span class="text-logo">
+                                <a class="nav-link d-none d-lg-inline" href="./index.html"
+                                    aria-label="navigate to home page">The <span class="upperbold">Forgiveness</span>
+                                    Experiment</a>
+                                 <a class="nav-link d-lg-none d-block upperbold normal active" href="./index.html"
+                                    aria-label="navigate to home page">Home</a>
+                            </span>
+                        </li>
+                        <li>
+                            <a class="nav-link upperbold" href="./book.html">The book</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link upperbold" href="./author.html">The Author</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle upperbold" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Beyond the book
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./forgiveness-lab.html">The Forgiveness Lab</a>
+                                <a class="dropdown-item" href="./media.html">Media, Press & Podcasts</a>
+                                <a class="dropdown-item" href="./speaking-and-book-tour.html">Speaking Tours & Events</a>
+                            </div>
+                        </li>
+                        <!-- <a  class="nav-link upperbold" href="./speaking-and-book-tour.html">Speaking & Book Tour</a> -->
+                        <li>
+                            <a class="nav-link upperbold" href="./bulk-orders.html">Bulk Orders</a>
+
+                        </li>
+                        <li>
+                            <a class="nav-link upperbold" href="./contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-btn buy-now-btn btn upperbold" href="./where-to-buy.html">Buy now</a>
+
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main class="container-fluid">
-        <div class="row px-3 px-lg-5 pb-lg-5 align-items-center">
-            <section class="col col-12 col-xl-7 flex-grow-lg-1 clean ps-lg-0">
-                <h1 class="d-flex flex-column before-icon">
-                    The <span class="text-bold">Forgiveness</span>
-                    Experiment
-                </h1>
-                <p class="tagline ms-2 mt-3 mb-4 text-left">
-                    What if the only thing between you and peace...
-                    <strong>was letting go</strong>?
-                </p>
-                <div class="d-flex my-3 justify-content-start">
-                    <!-- This is the Waitlist button. Comment out when ready to buy 
-                    <button id="preorderBtn" class="preorder-btn btn btn-primary upperbold" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        Join the Waitlist
-                    </button>
-                    Waitlist button ends -->
-                    <!-- Modal - form for waitlist -->
-                    <!-- <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Join Waitlist Form</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="mt-3 ms-2 preorder-form" id="preOrderForm">
-                                        <div class="mb-3">
-                                            <div class="mb-3">
-                                                <label for="nameInput" class="form-label">First Name/Last Name</label>
-                                                <input type="text" class="form-control" id="nameInput"
-                                                    placeholder="John Doe" required>
-                                            </div>
-                                            <label for="formEmail" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="emailInput"
-                                                aria-describedby="emailHelp" placeholder="example@example.com" required>
-                                            <div id="emailHelp" class="form-text mt-3 mb-2"><strong>Data
-                                                    Disclosure</strong>:
-                                                By joining the waitlist, you consent to Yisroel Bernath, Chabad NDG, and
-                                                its affiliates collecting and storing your name and email for the
-                                                purpose of contacting you about this book and related updates or events.
-                                                Your information is transmitted securely via SSL and will not be shared
-                                                with third parties. All data is the property of Yisroel Bernath, Chabad
-                                                NDG, and its affiliates, and will be used solely for their
-                                                communications.</div>
-                                        </div>
-
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="consentCheck" required>
-                                            <label class="form-check-label" for="consentCheck"><strong>I consent to the
-                                                    Data Disclosure</strong></label>
-                                        </div>
-                                        <div class="d-flex justify-content-center justify-content-xl-start"><button
-                                                type="submit" class="btn preorder-btn upperbold"
-                                                id="formSubmit">Submit</button></div>
-                                        <div id="formHolder"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- End of Modal/Form for waitlist -->
-                    <!-- The following html is the drop-down style button with links to retailers.
-                     Reminder: Uncomment the code below to enable it. 
-                    TO DO: Add hrefs to retailers when available.
-                    Add/Remove as many as you want (each one is an <li> element with an <a> inside it).
-                    -->
-                    <button type="button" class="preorder-btn btn btn-primary upperbold" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Order Now
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item upperbold" href="https://www.amazon.ca/dp/1069217638"
-                                target="_blank">Amazon <span class="emoji">🇨🇦</span></a></li>
-                        <li><a class="dropdown-item upperbold"
-                                href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217638"
-                                target="_blank">Amazon <span class="emoji">🇺🇸</span></a></li>
-                        <li><a class="dropdown-item upperbold"
-                                href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your-ebook/dp/B0FR2QNJL6"
-                                target="_blank">Kindle <span class="emoji">🇨🇦</span></a></li>
-                        <li><a class="dropdown-item upperbold" href="https://www.amazon.com/dp/B0FR2QNJL6"
-                                target="_blank">Kindle <span class="emoji">🇺🇸</span></a></li>
-                    </ul>
+        <div class="home-hero-wrapper pt-5">
+            <div class="row px-3 px-lg-5 align-items-center">
+                <section class="col col-12 col-xl-7 flex-grow-lg-1 clean ps-lg-0">
+                    <h1 class="d-flex flex-column before-icon home-heading">
+                        The <span class="text-bold">Forgiveness</span>
+                        Experiment
+                    </h1>
+                    <p class="tagline ms-2 mt-3 mb-4 text-left">
+                        What if the only thing between you and peace...
+                        <strong>was letting go</strong>?
+                    </p>
+                    <div class="d-flex my-3 justify-content-start">
+                        <a class="preorder-btn btn btn-primary upperbold home-cta" href="./where-to-buy.html">
+                            Order Now
+                        </a>
+                        <!-- <ul class="dropdown-menu">
+                            <li><a class="dropdown-item upperbold" href="https://www.amazon.ca/dp/1069217638"
+                                    target="_blank">Amazon <span class="emoji">🇨🇦</span></a></li>
+                            <li><a class="dropdown-item upperbold"
+                                    href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217638"
+                                    target="_blank">Amazon <span class="emoji">🇺🇸</span></a></li>
+                            <li><a class="dropdown-item upperbold"
+                                    href="https://www.amazon.ca/Forgiveness-Experiment-What-Would-Your-ebook/dp/B0FR2QNJL6"
+                                    target="_blank">Kindle <span class="emoji">🇨🇦</span></a></li>
+                            <li><a class="dropdown-item upperbold" href="https://www.amazon.com/dp/B0FR2QNJL6"
+                                    target="_blank">Kindle <span class="emoji">🇺🇸</span></a></li>
+                            <li><a class="dropdown-item upperbold"
+                                    href="https://www.audible.ca/pd/The-Forgiveness-Experiment-Audiobook/B0GMS2HFL9"
+                                    target="_blank">Audible <span class="emoji">🇨🇦</span></a></li>
+                            <li><a class="dropdown-item upperbold"
+                                    href="https://www.audible.com/pd/The-Forgiveness-Experiment-Audiobook/B0GMS5DCKH"
+                                    target="_blank">Audible <span class="emoji">🇺🇸</span></a></li>
+            
+                        </ul> -->
+                    </div>
+                </section>
+                <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end p-0">
+                    <div class="bernath-headshot mt-xl-5"></div>
                 </div>
-            </section>
-            <div class="col col-12 col-xl-4 d-flex justify-content-center justify-content-xl-end">
-                <img class="img-fluid cover-img" src="./assets/imgs/book-cover-asset_transparent.png" alt="" />
             </div>
         </div>
-        <section class="highlight-bg" id="about_book">
+        <section id="about_book">
             <div class="cont px-3 pt-5 px-lg-5 column-important">
                 <h2 class="before-icon icon-1 icon-right mb-4">About the book</h2>
                 <p>
@@ -176,20 +161,20 @@
                 <p class="upperbold">
                     For those who wonder if they will ever feel whole again.
                 </p>
-                <p class="upperbold">This book is for you.</p>
+                <p class="upperbold mb-5">This book is for you.</p>
                 <div class="mb-4">
-                    <a href="./assets/pdfs/The-Forgiveness-Experiment-Introduction.pdf" target="_blank" class="btn btn-outline upperbold text-uppercase" style="font-weight: normal;">
-                            Preview Book Introduction →
+                    <a href="./book.html" class="btn btn-outline upperbold text-uppercase" style="font-weight: normal;">
+                        Learn More About the book →
                     </a>
                 </div>
             </div>
             <!-- <div id="formHolder"></div> -->
-              
+
         </section>
 
-        <section class="content-section row px-3 pt-5 px-lg-5 me-1 me-md-0" id="advance_praise">
-            <div class="px-xl-5">
-                <h2 class="before-icon icon-2 icon-right mb-2 mb-md-4">Advance Praise</h2>
+        <div class="content-section row px-3 pt-5 px-lg-5 me-1 me-md-0 highlight-bg" id="advance_praise">
+            <div class="px-xxl-5">
+                <h2 class="before-icon icon-3 icon-right mb-4">Endorsements</h2>
                 <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between me-lg-4">
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
@@ -216,7 +201,7 @@
                     </div>
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
-                            <span class="m-auto quote-inner-img">
+                            <span class="m-auto quote-inner-img aleeza">
                                 <img src="./assets/imgs/aleeza-ben-shalom.jpeg" alt="" class="img-fluid rounded" />
                             </span>
                         </div>
@@ -263,15 +248,498 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
+
+
             </div>
 
-        </section>
+        </div>
+        <section>
+            <div class="row px-3 pt-5 pb-4 pb-lg-5">
+                <div class="px-xxl-5">
+                    <h2 class="before-icon icon-1 icon-right mb-2 mb-md-4">Reviews by Readers</h2>
+                    <!-- DESKTOP CAROUSEL 2 REVIEWS PER SLIDE-->
+                    <div id="textCarouselDesktop" class="carousel carousel-dark slide d-none d-lg-block"
+                        data-bs-ride="carousel">
 
+                        <!-- Desktop Indicators -->
+                        <div class="carousel-indicators">
+
+                            <button type="button" data-bs-target="#textCarouselDesktop" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                            <button type="button" data-bs-target="#textCarouselDesktop" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+
+                            <button type="button" data-bs-target="#textCarouselDesktop" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#textCarouselDesktop" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <!-- Desktop Slides -->
+                        <div class="carousel-inner rounded">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <div class="row g-0 justify-content-center">
+                                    <!-- Review 1 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                Finally, I got my life back!
+                                            </h5>
+                                            <p class="lead">
+                                                "When all is said and done--this book got me my
+                                                life back! It really did. Thank you Rabbi Bernath
+                                                for writing this book and sharing your wisdom, and
+                                                knowledge."
+                                            </p>
+                                            <small class="text-muted">
+                                                - Natasha
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <!-- Review 2 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                A must-read in 2026!!
+                                            </h5>
+                                            <p class="lead">
+                                                "Unbelievably powerful. I had many "aha" moments
+                                                while reading and following along with the
+                                                exercises. I didn't realize I was holding on to
+                                                so much pain. So honest, real, spiritual, while
+                                                also teaching you what to do with all your pent
+                                                up feelings and grudges. I feel lighter, and more
+                                                in touch with what I need to let go of, from this
+                                                book. I couldn't recommend more!!!"
+                                            </p>
+                                            <small class="text-muted">
+                                                - Anne
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="row g-0 justify-content-center">
+                                    <!-- Review 3 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                This should be required reading!
+                                            </h5>
+                                            <p class="lead">
+                                                Reading this book was more like having a conversation in my head with
+                                                our good friend Rabbi Bernath. He bears his soul and shares beautiful
+                                                heartfelt stories that lead you in a natural way to your own hard truths
+                                                of being wronged or hurt by others. At the same time the book allows the
+                                                reader to draw from our own experiences , the times we hurt others and
+                                                exactly how to process and release it. We as humans can all relate to
+                                                this at some time of our lives. It’s an easy flow read with derp
+                                                profound yet simple ideas to process a forgiveness of any kind. I’ve
+                                                already bought several books for gifts. Highly recommend.
+                                            </p>
+                                            <small class="text-muted">
+                                                - Cheryl
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <!-- Review 4 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                A book that makes you reflect
+                                            </h5>
+                                            <p class="lead">
+                                                I really enjoyed reading "The Forgiveness Experiment". It shares simple
+                                                yet powerful insights about letting go, healing, and growing through
+                                                forgiveness. Rabbi Bernath explains the topic in a way that feels both
+                                                practical and personal.
+                                                Reading this book made me reflect on my own life and relationships. It
+                                                truly gave me a new perspective on forgiveness. Anyone interested in
+                                                personal growth, spirituality, or emotional healing would really enjoy
+                                                this book.
+                                                A truly meaningful and inspiring read.
+                                            </p>
+                                            <small class="text-muted">
+                                                - Silvia
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="row g-0 justify-content-center">
+                                    <!-- Review 5 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                Empowering Experiences
+                                            </h5>
+                                            <p class="lead">
+                                                So far, several chapters have addressed issues faced in my own life and
+                                                provided me with wisdom to release what I’ve been holding onto for
+                                                years, or even minutes. Using the suggested steps for renewal of my
+                                                thoughts, my heart and my emotions have produced wonderful insight and
+                                                results. I truly appreciate RYB’s statements about the fact that it
+                                                doesn’t always go away - right away, but knowing what to do in response
+                                                to it, definitely has helped me with healing.
+                                                Purchased one for myself, and another for someone else who needs the
+                                                benefits of forgiveness.
+                                                Grateful to G-d for blessing me with this information, instruction and
+                                                insight on how to move beyond resentment.
+                                            </p>
+                                            <small class="text-muted">
+                                                - WhoMe
+                                            </small>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Review 6 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                10/10
+                                            </h5>
+                                            <p class="lead">
+                                                This book is phenomenal! I have been listening to Rabbi Bernath’s
+                                                podcast, “Kabbalah is for Everyone” for a little over a year which is
+                                                how I learned about this release. I have been thrilled so far with his
+                                                new book! The exercises included and mindset reframes are absolutely
+                                                groundbreaking! I recommend this book to anyone who is looking for a new
+                                                perspective on self growth and forgiveness. Everyone needs this!
+                                            </p>
+                                            <small class="text-muted">
+                                                - Delora May Day
+                                            </small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <div class="row g-0 justify-content-center">
+                                    <!-- Review 5 -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <div class="stars">
+                                                ★★★★★
+                                            </div>
+                                            <h5 class="fw-bold mb-3">
+                                                The Forgiveness Experiment is worth the read!
+                                            </h5>
+                                            <p class="lead">
+                                                Well written and encouraging read. This book challenges the readers to
+                                                consider what life would look like if they walked in freedom instead of
+                                                bitterness. There are loads of examples of what forgiveness can look
+                                                like. I appreciated the questions at the end of each chapter that
+                                                encouraged me to look deeply into my own life experiences. Definitely
+                                                worth reading and becoming involved in the forgiveness experiment by
+                                                doing the exercises at the end of each chapter.
+                                            </p>
+                                            <small class="text-muted">
+                                                - Katieh
+                                            </small>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Continue Reading -->
+                                    <div class="col-md-6">
+                                        <div class="p-5 text-left mx-auto carousel-text carousel-card">
+                                            <h5 class="fw-bold mb-3">
+                                                Continue Reading
+                                            </h5>
+                                            <p class="lead">
+                                                Select the link below to read more about how this
+                                                book has impacted readers:
+                                            </p>
+                                            <a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217638#averageCustomerReviewsAnchor"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="btn btn-outline upperbold text-uppercase"
+                                                style="font-weight: normal;">
+                                                Read more Amazon Reviews
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Desktop Previous -->
+                        <button class="carousel-control-prev carousel-control" type="button"
+                            data-bs-target="#textCarouselDesktop" data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                            <span class="visually-hidden">
+                                Previous
+                            </span>
+
+                        </button>
+                        <!-- Desktop Next -->
+                        <button class="carousel-control-next carousel-control" type="button"
+                            data-bs-target="#textCarouselDesktop" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">
+                                Next
+                            </span>
+                        </button>
+                    </div>
+                    <!-- MOBILE CAROUSEL 1 REVIEW PER SLIDE -->
+
+                    <div id="textCarouselMobile" class="carousel carousel-dark slide d-block d-lg-none"
+                        data-bs-ride="carousel">
+                        <!-- Mobile Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button" data-bs-target="#textCarouselMobile" data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                        </div>
+
+                        <!-- Mobile Slides -->
+                        <div class="carousel-inner rounded">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active carousel-card" data-bs-interval="5000">
+
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        Finally, I got my life back!
+                                    </h5>
+                                    <p class="lead">
+                                        "When all is said and done--this book got me my life back!
+                                        It really did. Thank you Rabbi Bernath for writing this
+                                        book and sharing your wisdom, and knowledge."
+                                    </p>
+                                    <small class="text-muted">
+                                        - Natasha
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        A must-read in 2026!!
+                                    </h5>
+                                    <p class="lead">
+                                        "Unbelievably powerful. I had many "aha" moments while
+                                        reading and following along with the exercises. I didn't
+                                        realize I was holding on to so much pain. So honest, real,
+                                        spiritual, while also teaching you what to do with all
+                                        your pent up feelings and grudges. I feel lighter, and
+                                        more in touch with what I need to let go of, from this
+                                        book. I couldn't recommend more!!!"
+                                    </p>
+                                    <small class="text-muted">
+                                        - Anne
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        Recommend this book to everyone!
+                                    </h5>
+                                    <p class="lead">
+                                        "...I've already tried some of the exercises and they have
+                                        been immensely helpful! It's written in a way that is very
+                                        easy to read and draws you in, in a way that you want to
+                                        keep on reading."
+                                    </p>
+                                    <small class="text-muted">
+                                        - Shevy
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        This should be required reading!
+                                    </h5>
+                                    <p class="lead">
+                                        Reading this book was more like having a conversation in my head with
+                                        our good friend Rabbi Bernath. He bears his soul and shares beautiful
+                                        heartfelt stories that lead you in a natural way to your own hard truths
+                                        of being wronged or hurt by others. At the same time the book allows the
+                                        reader to draw from our own experiences , the times we hurt others and
+                                        exactly how to process and release it. We as humans can all relate to
+                                        this at some time of our lives. It’s an easy flow read with derp
+                                        profound yet simple ideas to process a forgiveness of any kind. I’ve
+                                        already bought several books for gifts. Highly recommend.
+                                    </p>
+                                    <small class="text-muted">
+                                        - Cheryl
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        A book that makes you reflect
+                                    </h5>
+                                    <p class="lead">
+                                        I really enjoyed reading "The Forgiveness Experiment". It shares simple
+                                        yet powerful insights about letting go, healing, and growing through
+                                        forgiveness. Rabbi Bernath explains the topic in a way that feels both
+                                        practical and personal.
+                                        Reading this book made me reflect on my own life and relationships. It
+                                        truly gave me a new perspective on forgiveness. Anyone interested in
+                                        personal growth, spirituality, or emotional healing would really enjoy
+                                        this book.
+                                        A truly meaningful and inspiring read.
+                                    </p>
+                                    <small class="text-muted">
+                                        - Silvia
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        10/10
+                                    </h5>
+                                    <p class="lead">
+                                        This book is phenomenal! I have been listening to Rabbi Bernath’s
+                                        podcast, “Kabbalah is for Everyone” for a little over a year which is
+                                        how I learned about this release. I have been thrilled so far with his
+                                        new book! The exercises included and mindset reframes are absolutely
+                                        groundbreaking! I recommend this book to anyone who is looking for a new
+                                        perspective on self growth and forgiveness. Everyone needs this!
+                                    </p>
+                                    <small class="text-muted">
+                                        - Delora May Day
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+                                    <div class="stars">
+                                        ★★★★★
+                                    </div>
+                                    <h5 class="fw-bold mb-3">
+                                        The Forgiveness Experiment is worth the read!
+                                    </h5>
+                                    <p class="lead">
+                                        Well written and encouraging read. This book challenges the readers to
+                                        consider what life would look like if they walked in freedom instead of
+                                        bitterness. There are loads of examples of what forgiveness can look
+                                        like. I appreciated the questions at the end of each chapter that
+                                        encouraged me to look deeply into my own life experiences. Definitely
+                                        worth reading and becoming involved in the forgiveness experiment by
+                                        doing the exercises at the end of each chapter.
+                                    </p>
+                                    <small class="text-muted">
+                                        - Katieh
+                                    </small>
+                                </div>
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="carousel-item carousel-card" data-bs-interval="5000">
+                                <div class="p-5 text-center mx-auto">
+
+                                    <h5 class="fw-bold mb-3">
+                                        Continue Reading
+                                    </h5>
+                                    <p class="lead">
+                                        Select the link below to read more about how this book has
+                                        impacted readers:
+                                    </p>
+                                    <a href="https://www.amazon.com/Forgiveness-Experiment-What-Would-Your/dp/1069217638#averageCustomerReviewsAnchor"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="btn btn-outline upperbold text-uppercase" style="font-weight: normal;">
+                                        Read more Amazon Reviews
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile Previous -->
+                        <button class="carousel-control-prev carousel-control" type="button"
+                            data-bs-target="#textCarouselMobile" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">
+                                Previous
+                            </span>
+                        </button>
+                        <!-- Mobile Next -->
+                        <button class="carousel-control-next carousel-control" type="button"
+                            data-bs-target="#textCarouselMobile" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">
+                                Next
+                            </span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="p-2"></div>
+        </section>
         <section class="highlight-bg pb-5" id="about_author">
             <div class="row px-3 pt-4 px-lg-5">
                 <div class="px-xxl-5 pt-4 pb-md-4">
-                    <h2 class="before-icon icon-3 icon-right mb-2 mb-md-4">About the author</h2>
+                    <h2 class="before-icon icon-2 icon-right mb-2 mb-md-4">The Author</h2>
                 </div>
             </div>
             <div class="cont px-3 px-lg-5">
@@ -291,23 +759,32 @@
                         their six children. This book is not just his teaching,
                         it's his personal journey.
                     </p>
+                    <div>
+                    <a href="./author.html" class="btn btn-outline upperbold text-uppercase mt-2"
+                        style="font-weight: normal;">
+                        Learn more →
+                    </a>
                 </div>
-                <div class="portrait me-4">
+                </div>
+                <div class="portrait" style="margin-bottom: 1rem;">
                     <span class="portrait-inner">
                         <img src="./assets/imgs/rabbi-yisroel-bernath-headshot-2.jpg"
                             class="img-fluid rounded square-portrait" alt="" />
                     </span>
                 </div>
+
             </div>
+            
         </section>
         <section class="content-section row px-3 pt-5 px-lg-5" id="beyond_the_book">
-            <div class="px-xl-5">
-                <h2 class="before-icon icon-2 icon-right mb-2 mb-md-4">Beyond the Book</h2>
-                <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between me-3 me-lg-4">
+            <div class="px-xxl-5">
+                <h2 class="before-icon icon-1 icon-right mb-2 mb-md-4">Beyond the Book</h2>
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between me-3 me-lg-4">
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
                             <span class="m-auto quote-inner-img">
-                                <img src="./assets/imgs/class.webp" alt="" class="img-fluid rounded" />
+                                <img src="./assets/imgs/forgivenesslab.png" alt="" class="img-fluid rounded" />
                             </span>
                         </div>
                         <div class="quote-text mt-4 mb-4">
@@ -315,23 +792,22 @@
                             <p>A 4-week immersive healing experience with Rabbi Yisroel Bernath that weaves Jewish
                                 wisdom, spiritual practice, and emotional insight. Release resentment, soften
                                 self-blame, and begin letting go of the past – together, in community.</p>
-                            <a class="upperbold cta-link" href="https://www.jewishndg.com/civicrm/event/info%3Fid%3D89%26reset%3D1" target="_blank">Learn more →</a>
+                            <a class="upperbold cta-link" href="./forgiveness-lab.html">Learn more →</a>
                         </div>
                     </div>
                     <div class="quote-block mt-4 mb-4">
                         <div class="quote-img">
                             <span class="m-auto quote-inner-img">
-                                <img src="./assets/imgs/book-launch.jpg" alt="" class="img-fluid rounded" />
+                                <img src="./assets/imgs/speaking.png" alt="" class="img-fluid rounded" />
                             </span>
                         </div>
                         <div class="quote-text mt-4 mb-4">
-                            <h3>Book Launch Conversation</h3>
-                            <p>
-                                Rabbi Bernath joins actor and writer Ilana Zackon for a deep, extended conversation at
-                                his Montreal book launch. They explore the book’s personal origins, somatic practices,
-                                and powerful psychological insights.
+                            <h3>Speaking & Book Tour</h3>
+                            <p>Invite Rabbi Yisroel Bernath to your city for a speaking engagement or book event. Rabbi
+                                Bernath has spoken at conferences, Shabbatons, and community dinners, sharing the themes
+                                and ideas explored in The Forgiveness Experiment.
                             </p>
-                            <a class="upperbold cta-link" href="https://youtu.be/yp9fsVvNywk" target="_blank">Watch now →</a>
+                            <a class="upperbold cta-link" href="./speaking-and-book-tour.html">Learn more →</a>
                         </div>
                     </div>
                     <div class="quote-block mt-4 mb-4">
@@ -342,13 +818,16 @@
                         </div>
                         <div class="quote-text mt-4 mb-4">
                             <h3>Forgiveness Book Media & Press Hub</h3>
-                            <p>Explore the latest interviews, podcasts and articles featuring Rabbi Bernath, sharing the
-                                deeper stories, insights, and behind-the-scenes moments behind The Forgiveness
-                                Experiment and its publication.
+                            <p>
+                                Explore the latest interviews, podcasts and articles featuring Rabbi Bernath, sharing
+                                the deeper stories, insights, and behind-the-scenes moments behind <em>The Forgiveness
+                                    Experiment</em> and its publication.
                             </p>
-                            <a class="upperbold cta-link" href="./media.html" target="_blank">View now →</a>
+                            <a class="upperbold cta-link" href="./media.html">View Now
+                                →</a>
                         </div>
                     </div>
+
                 </div>
             </div>
 
