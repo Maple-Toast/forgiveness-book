@@ -872,6 +872,10 @@ body {
 
 }
 
+#textCarouselMobile .carousel-inner .carousel-item p {
+	font-size: 16px;
+}
+
 .carousel-control {
 	width: 7%;
 
