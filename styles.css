@@ -1235,6 +1235,10 @@ footer {
 		margin-bottom: 0em;
 		font-size: 14px;
 	}
+
+	/* & .container-lg .d-flex .book-info .upperbold .cta-link:hover {
+		text-decoration: underline 0.07em;
+	} */
 }
 
 .btn.btn-outline {
