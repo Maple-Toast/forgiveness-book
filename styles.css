@@ -892,15 +892,15 @@ body {
 
 
 	@media (min-width: 1000px) {
-		max-width: 520px;
+		max-width: 920px;
 	}
 
-	&>p {
+	/* &>p {
 		overflow: hidden;
 		display: -webkit-box;
 		-webkit-line-clamp: 4;
 		-webkit-box-orient: vertical;
-	}
+	} */
 }
 
 .carousel-indicators {
