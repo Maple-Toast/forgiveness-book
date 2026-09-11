@@ -333,6 +333,10 @@ h3 {
 	@media (min-width: 400px) {
 		font-size: 18px;
 	}
+
+	&.home-brand {
+		color: var(--main-color-dark)
+	}
 }
 
 p {
@@ -440,6 +444,16 @@ p {
 	border-radius: 10px;
 }
 
+.emphasis-block {
+	font-weight: 500;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	background-color: var(--main-color-dark);
+	color: var(--main-color-light);
+	padding: 2ch;
+	border-radius: 10px;
+}
+
 .section-emphasis {
 
 	font-weight: 400;
@@ -513,20 +527,43 @@ p {
 	font-size: 2rem;
 }
 
-.bernath-headshot {
+/* .bernath-headshot {
 	--width: 400px;
 	--height: 400px;
 
 	width: var(--width);
 	height: var(--height);
 	background-image: url('./assets/imgs/headshot-0.png');
-	background-size: cover;
-	background-position: 50% 30%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
 
 	@media screen and (min-width: 700px) {
 		--width: 540px;
 	--height: 540px;
 	}
+
+	@media screen and (min-width: 1200px) {
+		--width: 600px;
+		--height: 600px;
+	}
+} */
+
+.bernath-headshot {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+
+    /* Tablet breakpoint */
+    @media screen and (min-width: 700px) {
+        max-width: 540px;
+    }
+
+    /* Desktop breakpoint - Scaled up */
+    @media screen and (min-width: 1200px) {
+        max-width: 720px; /* Increased from 600px */
+    }
 }
 
 .home-hero-wrapper {
@@ -537,9 +574,21 @@ p {
 	}
 }
 
-.home-heading {
-	color: var(--main-color-light) !important;
+.hero-buy-options {
+	font-size: 14px;
+	color: var(--accent-color-light);
 }
+
+h1.home-heading {
+	color: var(--main-color-light) !important;
+	
+
+	@media (min-width: 768px) {
+		font-size: 4em;
+	}
+}
+
+
 
 /* .home-cta {
 	border: 2px solid var(--main-color-light) !important;
@@ -637,6 +686,12 @@ body {
 		background-color: var(--accent-color-light);
 		color: var(--main-color-dark);
 	}
+}
+
+.home-cta {
+	font-size: 1.5rem;
+	border-radius: 100vh;
+	border-width: 3px;
 }
 
 .buy-now-btn {
@@ -1261,7 +1316,7 @@ footer {
 
 	.social-links a img {
 		max-width: 50px;
-		padding: 5px;
+		padding: 3px;
 		border-radius: 50%;
 		background-color: var(--accent-color-dark);
 
