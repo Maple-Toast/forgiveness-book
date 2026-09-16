@@ -17,6 +17,10 @@
 	--h2-desktop-size: 2.75em;
 }
 
+.inter {
+	font-family: 'Inter', sans-serif;
+}
+
 /* nav */
 
 nav {
