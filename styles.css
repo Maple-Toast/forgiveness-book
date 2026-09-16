@@ -1239,6 +1239,10 @@ footer {
 	/* & .container-lg .d-flex .book-info .upperbold .cta-link:hover {
 		text-decoration: underline 0.07em;
 	} */
+
+	& .divider {
+		color: var(--accent-color-dark);
+	}
 }
 
 .btn.btn-outline {
