@@ -593,13 +593,19 @@ p {
 
 h1.home-heading {
 	color: var(--main-color-light) !important;
-	
+	font-weight: 600;
+	font-size: 2em;
 
 	@media (min-width: 768px) {
-		font-size: 4em;
+		font-size: 3.5em;
 	}
 }
 
+.tagline {
+	@media (min-width: 768px) {
+		font-size: 1.2em;
+	}
+}
 
 
 /* .home-cta {
@@ -1012,8 +1018,12 @@ body {
 		font-weight: 600;
 
 		& span {
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: normal;
+
+			@media (min-width: 400px) {
+				font-size: 16px;
+			}
 
 			@media (min-width: 500px) {
 				font-size: 20px;
